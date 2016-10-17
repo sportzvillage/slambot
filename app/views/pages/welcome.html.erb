@@ -1,0 +1,187 @@
+<div class="header" >
+  <div class="intro">
+    <div class="col-sm-6" id="slamhead">SLAM</div>
+    <div class="col-sm-6" id="slamsubhead">Class 7 Geography through Sports</div>
+    <div class="col-sm-12" id = "startbtn"><button type="button" class="btn btn-head btnstart" >Lets Start !</button></div>
+  </div>
+    <div class="startuprow" >
+    	<div class="col-sm-4" >
+          <% if user_signed_in? %>
+                          <%= link_to "Logout", destroy_user_session_path,:method => :delete %>
+                        <% else %>
+                          <button type="button" class="btn btn-head" id="opener-4">Sign In</button>
+                        <% end %>
+      		
+ 		</div>
+ 		<div class="col-sm-4" >
+       		<button type="button" class="btn btn-head"  id="opener-3">Contact Us</button>
+ 		</div>
+ 		<div class="col-sm-4" >
+          <%= link_to 'Signup', signup_path, class: "btn btn-head", type: "button" %>
+ 		</div>, 
+    </div>
+
+    <div id="contactus" title="Contact Us">
+       <div class="contactnumber">
+          <p>Get in touch with our expert Yatharth Sharma at +91-9619139810</p>
+          <p>OR</p>
+          <p>Drop us a message</p>
+
+          <%= form_for Message.new do |f| %>
+
+  <div class="field" >
+  <div class ="form-text">Name</div>
+  <%= f.text_field :name%><br />
+  </div>
+
+  <div class="field">
+  <div class ="form-text">Number</div>
+  <%= f.text_field :number%><br />
+  </div>
+
+  <div class="field">
+    <div class ="form-text">Message</div>
+    <%= f.text_area :message %><br />
+  </div>
+
+  <div class="action" font-color="white">
+  <%= f.submit "Submit",class: "btn btn-submit" %>
+  </div>
+
+  <% end %>
+       </div>
+
+    </div>
+
+    <div id="signin" title="Sign In">
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
+
+  <% if devise_mapping.rememberable? -%>
+    <div class="field">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </div>
+  <% end -%>
+
+ <div class="action" font-color="white">
+  <%= f.submit "LogIn",class: "btn btn-submit" %>
+  </div>
+<% end %>
+<%= link_to "Forgot your password?", new_password_path(resource_name) %>
+</div>
+
+
+
+
+      </div>
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+      <!-- CSS -->
+      <style>
+
+            .ui-widget-header,.ui-state-default, ui-button{
+            background:#012d4d;
+            border: 1px solid white;
+            text-align:center;
+            color: white  ;
+            font-size:150%;
+            }
+            #contactus,#signin{
+              background: white;
+              text-align: center;
+            }
+            .intro{
+              float:right;
+              height:100px;
+              width:100%;
+              padding:40px;
+            }
+            #slamhead{
+              font-size: 70px;
+              float:left;
+              color: #012d4d;
+              font-weight: bold;
+            }
+            #slamsubhead{
+              font-size: 30px;
+              margin-top:30px;
+              color:black;
+            }
+            #startbtn{
+              
+              height:300px;
+              padding-top: 110px;
+
+            }
+            .btnstart{background-color: #2CDE10;color:black;}
+            .startuprow{
+              height:300px;
+
+              padding-top: 50px;
+            }
+      </style>
+      <!-- Javascript -->
+      <script>
+         $(function() {
+            $( "#contactus" ).dialog({
+               autoOpen: false, 
+               hide: "puff",
+               modal: true,
+               show : "slide",
+               height:460,
+               width:350  
+            });
+            $( "#opener-3" ).click(function() {
+               $( "#contactus" ).dialog( "open" );
+            });
+         });
+         $(function() {
+            $( "#signin" ).dialog({
+               autoOpen: false, 
+               hide: "puff",
+               modal: true,
+               show : "slide",
+               height:330,
+               width:300  
+            });
+            $( "#opener-4" ).click(function() {
+               $( "#signin" ).dialog( "open" );
+            });
+            $(function() {
+            $(".startuprow").hide();
+            $(".btnstart").click(function() {
+              $(".intro").hide();
+              $(".startuprow").show();
+
+            });
+
+            });
+         });
+
+      </script>
