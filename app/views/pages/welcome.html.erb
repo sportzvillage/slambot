@@ -2,20 +2,17 @@
   <div class="intro">
     <div class="col-sm-4" id="slamhead">SLAM</div>
     <div class="col-sm-8" >
-      <div class="col-sm-4" >
-          <% if user_signed_in? %>
-                          <%= link_to "Logout", destroy_user_session_path,:method => :delete %>
-                        <% else %>
-                          <button type="button" class="btn btn-head" id="opener-4">Sign In</button>
-                        <% end %>
+      
           
-    </div>
-    <div class="col-sm-4" >
+                          <button type="button" class="btn btn-head" id="opener-4">Sign In</button>
+                        
+          
+    
           <button type="button" class="btn btn-head"  id="opener-3">Contact Us</button>
-    </div>
-    <div class="col-sm-4" >
+   
+
           <%= link_to 'Signup', signup_path, class: "btn btn-head", type: "button" %>
-    </div>
+   
     </div>
     <div class="col-sm-12" id ="slamsubhead">Class 7 Geography through Sports</div>
         
