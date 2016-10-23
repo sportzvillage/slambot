@@ -13,27 +13,6 @@
   </div>
 
   <div class="field">
-    <div>Contact Number</div>
-    <%= f.text_field :number, autofocus: true %>
-  </div>
-
-  <div class="field">
-    <div>Age</div>
-    <%= f.text_field :age, autofocus: true %>
-  </div>
-
-  <div class="field">
-    <div>Email</div>
-    <%= f.email_field :email, autofocus: true %>
-  </div>
-
-  
-
-  
-
-  
-
-  <div class="field">
     <div>School</div>
     <%= f.text_field :school, autofocus: true %>
   </div>
@@ -44,11 +23,16 @@
   </div>
 
   <div class="field">
-    <div>Section</div>
-    <%= f.text_field :section, autofocus: true %>
-</div>
+    <div>Phone Number</div>
+    <%= f.text_field :number, autofocus: true %>
+  </div>	
+	
+  <div class="field">
+    <div>Email Id</div>
+    <%= f.email_field :email, autofocus: true %>
+  </div>
 
-<div class="field">
+  <div class="field">
     <div>Password</div>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
@@ -61,7 +45,7 @@
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
-<div class="heading"> Parents Details </div>
+<div class="heading"> Parent/Guardian Details </div>
 
 	<div class="field">
     <div>Name</div>
@@ -69,24 +53,19 @@
 </div>
 
 <div class="field">
-    <div>Relationship with mentioned person</div>
-    <%= f.text_field :relationship, autofocus: true %>
-</div>
-
-<div class="field">
-    <div>Contact Number</div>
+    <div>Phone Number</div>
     <%= f.text_field :parentnumber, autofocus: true %>
 </div>
 
 <div class="field">
-    <div>Email</div>
+    <div>Email Id</div>
     <%= f.text_field :parentemail, autofocus: true %>
 </div>
 
 
   
   <div class="actions">
-    <%= f.submit "Sign up",class: "btn btn-submit" %>
+    <%= f.submit "Enroll Me",class: "btn btn-submit" %>
   </div>
 <% end %>
 
@@ -102,7 +81,7 @@
 	border:1px solid black;
 	text-align: center;
 	padding-top: 0;
-	border-radius: 20px;
+	border-radius: 0px;
 	margin-bottom: 50px;
 
 
@@ -123,9 +102,9 @@
 .heading{
 	width:100%;
 	height:50px;
-	background: #71abd5;
+	background: #5fcf80;
 	font-size: 200%;
-	border-radius: 20px;
+	border-radius: 0px;
 
 }
 .field{
@@ -136,7 +115,7 @@
 }
 
 .btn-submit{
-              background-color: #71abd5;
+              background-color: #5fcf80;
               border-radius: 6px; 
               color:white;
               margin-top: 10px;
@@ -147,7 +126,7 @@
             .btn-submit:hover,
 .btn-submit:focus,
 .btn-submit:active {
-    color: #fff;
-    background-color: #012d4d;
+    color: #012d4d;
+    background-color: #ffffff;
 }
 </style>
