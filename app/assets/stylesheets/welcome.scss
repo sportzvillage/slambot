@@ -23,7 +23,8 @@
     margin-top:30px;
     font-size:150%;
     border-radius: 10px;
-    color:#5fcf80;
+    color:#1C8527;
+     outline:0;
     
 }
 
@@ -31,6 +32,8 @@
 .btn-head:focus,
 .btn-head:active {
     color: #ffffff;
+    border:none;
+    outline:0;
     background-color: #5fcf80;
 }
 
@@ -46,34 +49,102 @@ body{
 	padding-left:50px;
 	padding-right:50px;}
 
-.ui-widget-header,.ui-state-default, ui-button{
-            background:FAFAFA;
+
+
+            .ui-widget-header,.ui-state-default, ui-button{
+            background:#012d4d;
             border: 1px solid white;
             text-align:center;
             color: white  ;
             font-size:150%;
             }
             #contactus,#signin{
-              background: FAFAFA;
+              background: white;
               text-align: center;
             }
-            
-            
-            .contactnumber{
-              text-align: center;
-              font: bold;
+            .intro{
+              float:right;
+              height:100px;
+              width:100%;
+              padding:30px;
+              
             }
-            .btn-submit{
-              background-color: #5fcf80;
-              border-radius: 10px; 
+            #slamhead{
+              padding-left:125px;
+              font-size: 50px;
+              float:left;
+              color: #2C6F8C;
+              font-weight:bold;
+              margin-top: 20px
+            }
+            #slamsubhead{
+              font-size: 30px;
+              text-align: middle;
+              height: 100px;
+              padding-left: 0px;
+              padding-bottom: 100px;
+              margin-top: 450px;
+              font-weight: bold;
+              color:#2C6F8C;
+              
+            }
+
+            .signupmodal{
+             width:80%;
+             height:80%;
+             padding-top:0;
+            }
+            .contactmodal,.signinmodal{
+             width:400px;
+             padding-top:0;
+            }
+
+            
+
+            .form-text,label{
+              color:#012d4d;
+              margin:10px;
+              font-size: 15px;
+
+            }
+            .field{
+              margin:10px;
+            }
+
+            .modalheading{
+              font-weight: bold;
+              color:#1FBE2B;
+              height:50px;
+              padding-top: 10px;
+              font-size: 35px;
+            }
+
+            
+            input[type=text],textarea{
+    border:1px solid #939794; 
+    border-radius: 5px;
+    color:#434644;
+    outline:0;
+     padding: 1em;
+     border-radius:8px;
+     display: block;
+     width: 100%;
+     margin-top: 1em;
+     font-family: 'Merriweather', sans-serif;
+     box-shadow : 0 1px 1px rgba(black, 0.1);
+     resize: none;
+    
+}
+
+
+.btn-submit{
+              background-color: #4FC5D1;
+              border-radius: 6px; 
               color:white;
               margin-top: 10px;
               margin-bottom: 10px;
               width:100px;
               font-size:150%;
-            }
-            .form-text{
-              font-weight: bold;
             }
             .btn-submit:hover,
 .btn-submit:focus,
@@ -81,3 +152,34 @@ body{
     color: #fff;
     background-color: #012d4d;
 }
+     
+
+.modal-content{
+  padding:15px;
+  padding-top:0;
+} 
+
+.modalsubheading{
+    font-weight: bold;
+              color:#D14F61;
+              height:50px;
+              padding-top: 10px;
+              font-size: 22px;
+              margin:0;
+              margin-bottom: 10px
+  }
+
+  .signupmodalheading{
+    margin:0;
+    font-weight: bold;
+              color:#1FBE2B;
+              height:50px;
+              padding-top: 10px;
+              font-size: 35px;
+              
+  }
+
+  #signupsubmit{
+  padding-top:0;
+ 
+  }
