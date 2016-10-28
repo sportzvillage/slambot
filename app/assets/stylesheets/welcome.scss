@@ -72,13 +72,27 @@ body{
               
             }
             #slamhead{
-              padding-left:125px;
+              padding:0;
+              outline:0;
+              border:none;
+              padding-right:2px;
+              width : 100px;
+              background-color:white; 
               font-size: 50px;
               float:left;
               color: #2C6F8C;
               font-weight:bold;
-              margin-top: 20px
+              margin-top: 20px;
+              margin-left: 220px;
+              text-decoration: underline;
             }
+             #slamhead:hover{
+ border:none;
+ outline:none;
+ color: #012d4d;
+
+ }
+
             #slamsubhead{
               font-size: 30px;
               text-align: middle;
@@ -154,7 +168,7 @@ body{
     color: #fff;
     background-color: #012d4d;
 }
-     
+
 
 .modal-content{
   padding:15px;
