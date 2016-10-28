@@ -14,13 +14,13 @@
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   
   <div class="field">
-    <div class ="form-text">Email</div>
+    <div class ="form-text">Ema</div>
     <%= f.text_field :email, autofocus: true %>
   </div>
 
   <div class="field">
     <div class ="form-text">Password</div>
-    <%= f.text_field :password, autocomplete: "off" %>
+    <%= f.password_field :password, autocomplete: "off" %>
   </div>
 
   <% if devise_mapping.rememberable? -%>
@@ -112,12 +112,12 @@
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %>
-    <%= f.text_field :password, autocomplete: "off" %>
+    <%= f.password_field :password, autocomplete: "off" %>
   </div>
 
 <div class="field">
     <div class ="form-text">Confirm Password</div>
-    <%= f.text_field :password_confirmation, autocomplete: "off" %>
+    <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
 </div>
