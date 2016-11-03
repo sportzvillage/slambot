@@ -4,7 +4,7 @@
     background-size: 850px 550px;
     background-repeat:   no-repeat;
     background-position: center;
-	height: 650px;
+	height: auto 650px;
 	width: 100%;
 
 
@@ -63,13 +63,7 @@ body{
               background: white;
               text-align: center;
             }
-            .intro{
-              float:right;
-              height:100px;
-              width:100%;
-              padding:30px;
-              
-            }
+            
             #slamhead{
               padding:0;
               outline:0;
