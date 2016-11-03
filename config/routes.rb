@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   end
   root "pages#welcome"
 
-  get "/signup" => "pages#signup", as: 'signup'
+
+
+  get "/forgot_password" => "pages#forgotpwd", as: 'forgotpwd'
 
 end
