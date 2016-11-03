@@ -10,7 +10,6 @@
   text-align:center;
   margin-bottom:1px;
 
-
 }
 
 .row{
@@ -66,20 +65,26 @@ body{
               background: white;
               text-align: center;
             }
-            
+            .intro{
+              float:right;
+              height:100px;
+              width:100%;
+              padding:30px;
+              
+            }
             #slamhead{
               padding:0;
               outline:0;
               border:none;
-              padding-right:2px;
-              width : 100px;
+             
               background-color:white; 
               font-size: 50px;
-              float:left;
+              margin-left:200px;
+              text-align:center;
               color: #2C6F8C;
               font-weight:bold;
               margin-top: 20px;
-              margin-left: 160px;
+              
               text-decoration: underline;
             }
              #slamhead:hover{
@@ -91,18 +96,23 @@ body{
 
             #slamsubhead{
               font-size: 30px;
-              text-align: middle;
-              height: 100px;
+              text-align: center;
+              
               padding-left: 0px;
               padding-bottom: 100px;
               margin-top: 450px;
+              margin-bottom: 1px;
               font-weight: bold;
               color:#2C6F8C;
               
+              
+
+              
             }
             #rightnav{
-            padding-left:320px;
+            text-align:center;
             
+            padding-left:220px;
             }
 
             .signupmodal{
