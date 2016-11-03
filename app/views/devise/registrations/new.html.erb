@@ -1,0 +1,94 @@
+
+
+    
+      <div class="row"> <h2 class="signupmodalheading">SignUp</h2></div>
+<div class="row"> 
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+  <div class="col-sm-8"><h3 class="modalsubheading">Student Details</h3>
+    <div class="col-sm-6">
+
+      <div class="field">
+    <div class ="form-text">Full Name</div>
+    <%= f.text_field :name, autofocus: true %>
+  </div>
+
+  
+  <div class="field">
+    <div class ="form-text">Email Id</div>
+    <%= f.text_field :email, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <div class ="form-text">Password</div>
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
+
+<div class="field">
+    <div class ="form-text">Confirm Password</div>
+    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+  </div>
+
+</div>
+     <div class="col-sm-6"> 
+      
+<div class="field">
+    <div class ="form-text">Phone Number</div>
+    <%= f.text_field :number, autofocus: true %>
+  </div>  
+  
+  <div class="field">
+    <div class ="form-text">School</div>
+    <%= f.text_field :school, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <div class ="form-text">Standard</div>
+    <%= f.text_field :standard, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <div class ="form-text">Section</div>
+    <%= f.text_field :standard, autofocus: true %>
+  </div>
+
+  
+
+
+
+</div>
+    
+
+  
+
+  </div>
+  <div class="col-sm-4"><h3 class="modalsubheading">Parents Details</h3>
+    <div class="field">
+    <div class ="form-text">Name</div>
+    <%= f.text_field :parentname, autofocus: true %>
+</div>
+
+<div class="field">
+    <div class ="form-text">Relationship With Mentioned Person</div>
+    <%= f.text_field :relationship, autofocus: true %>
+</div>
+
+<div class="field">
+    <div class ="form-text">Phone Number</div>
+    <%= f.text_field :parentnumber, autofocus: true %>
+</div>
+
+<div class="field">
+    <div class ="form-text">Email Id</div>
+    <%= f.text_field :parentemail, autofocus: true %>
+</div>
+
+  </div>
+</div>
+<div class = "row" id="signupsubmit"><div class="actions">
+    <%= f.submit "Submit",class: "btn btn-submit" %>
+  </div>
+<% end %></div>
+
+    </div>
+ 

@@ -11,7 +11,4 @@ Rails.application.routes.draw do
   root "pages#welcome"
 
 
-
-  get "/forgot_password" => "pages#forgotpwd", as: 'forgotpwd'
-
 end
