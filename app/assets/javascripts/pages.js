@@ -72,5 +72,22 @@ $( ".btn-primary" ).click(function() {
     break;
   }
   $("html, body").animate({ scrollTop: $(document).height() }, 2000);
-});  
-})(jQuery); 
+}); 
+
+$("#new_message").validate({
+rules: {
+"message[name]": {required: true},  //added this
+"message[number]": {required: true, minlength: 10},
+"message[message]": {required: true}
+}
+})
+
+
+
+
+
+}); 
+
+
+
+

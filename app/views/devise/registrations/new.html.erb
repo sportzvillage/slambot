@@ -9,23 +9,23 @@
     <div class="col-sm-6">
 
       <div class="field">
-    <div class ="form-text">Full Name</div>
+    <div class ="form-text">Full Name<span id="asterik">*</span></div>
     <%= f.text_field :name, autofocus: true %>
   </div>
 
   
   <div class="field">
-    <div class ="form-text">Email Id</div>
+    <div class ="form-text">Email Id<span id="asterik">*</span></div>
     <%= f.text_field :email, autofocus: true %>
   </div>
 
   <div class="field">
-    <div class ="form-text">Password</div>
+    <div class ="form-text">Password<span id="asterik">*</span></div>
     <%= f.password_field :password, autocomplete: "off" %>
   </div>
 
 <div class="field">
-    <div class ="form-text">Confirm Password</div>
+    <div class ="form-text">Confirm Password<span id="asterik">*</span></div>
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
@@ -33,7 +33,7 @@
      <div class="col-sm-6"> 
       
 <div class="field">
-    <div class ="form-text">Phone Number</div>
+    <div class ="form-text">Phone Number<span id="asterik">*</span></div>
     <%= f.text_field :number, autofocus: true %>
   </div>  
   
@@ -64,22 +64,22 @@
   </div>
   <div class="col-sm-4"><h3 class="modalsubheading">Parents Details</h3>
     <div class="field">
-    <div class ="form-text">Name</div>
+    <div class ="form-text">Name<span id="asterik">*</span></div>
     <%= f.text_field :parentname, autofocus: true %>
 </div>
 
 <div class="field">
-    <div class ="form-text">Relationship With Mentioned Person</div>
+    <div class ="form-text">Relationship With Mentioned Person<span id="asterik">*</span></div>
     <%= f.text_field :relationship, autofocus: true %>
 </div>
 
 <div class="field">
-    <div class ="form-text">Phone Number</div>
+    <div class ="form-text">Phone Number<span id="asterik">*</span></div>
     <%= f.text_field :parentnumber, autofocus: true %>
 </div>
 
 <div class="field">
-    <div class ="form-text">Email Id</div>
+    <div class ="form-text">Email Id<span id="asterik">*</span></div>
     <%= f.text_field :parentemail, autofocus: true %>
 </div>
 

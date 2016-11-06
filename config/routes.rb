@@ -9,6 +9,11 @@ Rails.application.routes.draw do
     root 'pages#index', as: :authenticated_root
   end
   root "pages#welcome"
+  
+  get "/mes" => "pages#messagedownload"
+  get '/bvadbbuisblb' => 'messages#index', as: 'msgdownload'
 
+  get "/ues" => "pages#userdownload"
+  get '/bva' => 'users#index', as: 'userdownload'
 
 end

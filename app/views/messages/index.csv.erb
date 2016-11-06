@@ -1,0 +1,5 @@
+<%- headers = ['Name', 'Number','Message','Date'] -%>
+<%= CSV.generate_line headers %>
+<%- @messages.each do |message| -%>
+<%= CSV.generate_line([message.name,message.number,message.message,message.created_at], { col_sep: "\t" }) -%>
+<%- end -%>

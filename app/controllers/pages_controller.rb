@@ -8,6 +8,14 @@ class PagesController < ApplicationController
 	def signup
 	end
 
+	def messagedownload
+
+	end
+
+	def userdownload
+
+	end
+
 	
 
 end
