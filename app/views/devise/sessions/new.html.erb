@@ -2,7 +2,9 @@
       <h3 class="modalheading">Login</h3>
       
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  
+  <%- flash.each do |name, msg| -%>
+    <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
+  <%- end -%> 
   <div class="field">
     <div class ="form-text">Email</div>
     <%= f.text_field :email, autofocus: true %>
