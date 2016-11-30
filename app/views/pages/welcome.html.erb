@@ -8,7 +8,20 @@
     <div class="col-sm-8" id = "rightnav">
       
           
-                          <button class="btn btn-head" data-toggle="modal" data-target=".bd-example-modal-lg-signin">Login</button>
+  <button class="btn btn-head" data-toggle="modal" data-target=".bd-example-modal-lg-aboutus">AboutUs</button>
+
+<div class="modal fade bd-example-modal-lg-aboutus" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="aboutusmodal modal-dialog modal-lg">
+    <div class="modal-content">
+      <h3 class="modalheading">About US</h3>
+      <div>ENTERTEXT</div>
+
+
+    </div>
+  </div>
+</div>
+
+<button class="btn btn-head" data-toggle="modal" data-target=".bd-example-modal-lg-signin">Login</button>
 
 <div class="modal fade bd-example-modal-lg-signin" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="signinmodal modal-dialog modal-lg">
@@ -45,46 +58,11 @@
   </div>
 </div>
                         
+
+                        
           
     
-          <button class="btn btn-head" data-toggle="modal" data-target=".bd-example-modal-lg">Contact Us</button>
-
-<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="contactmodal modal-dialog modal-lg">
-    <div class="modal-content">
-      <h3 class="modalheading">Contact Us</h3>
-      <div class="contactnumber">
-          <p>Get in touch with us at +91-9619139810</p>
-          <p>OR</p>
-          <p>Drop us a message</p>
-
-          <%= form_for Message.new do |f| %>
-
-  <div class="field" >
-  <div class ="form-text">Name<span id="asterik">*</span></div>
-  <%= f.text_field :name%><br />
-  </div>
-
-  <div class="field">
-  <div class ="form-text">Phone Number<span id="asterik">*</span></div>
-  <%= f.text_field :number%><br />
-  </div>
-
-  <div class="field">
-    <div class ="form-text">Message<span id="asterik">*</span></div>
-    <%= f.text_area :message %><br />
-  </div>
-
-  <div class="action" font-color="white">
-  <%= f.submit "Submit",class: "btn btn-submit" %>
-  </div>
-
-  <% end %>
-       </div>
-    </div>
-  </div>
-</div>
-
+    
 
 
 
@@ -148,16 +126,8 @@
     <%= f.text_field :standard, autofocus: true %>
   </div>
 
-  
-
-
-
 </div>
-    
-
-  
-
-  </div>
+ </div>
   <div class="col-sm-4"><h3 class="modalsubheading">Parents Details</h3>
     <div class="field">
     <div class ="form-text">Name<span id="asterik">*</span></div>
@@ -189,6 +159,45 @@
     </div>
   </div>
 </div>
+
+<button class="btn btn-head" data-toggle="modal" data-target=".bd-example-modal-lg">Contact Us</button>
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="contactmodal modal-dialog modal-lg">
+    <div class="modal-content">
+      <h3 class="modalheading">Contact Us</h3>
+      <div class="contactnumber">
+          <p>Get in touch with us at +91-9619139810</p>
+          <p>OR</p>
+          <p>Drop us a message</p>
+
+          <%= form_for Message.new do |f| %>
+
+  <div class="field" >
+  <div class ="form-text">Name<span id="asterik">*</span></div>
+  <%= f.text_field :name%><br />
+  </div>
+
+  <div class="field">
+  <div class ="form-text">Phone Number<span id="asterik">*</span></div>
+  <%= f.text_field :number%><br />
+  </div>
+
+  <div class="field">
+    <div class ="form-text">Message<span id="asterik">*</span></div>
+    <%= f.text_area :message %><br />
+  </div>
+
+  <div class="action" font-color="white">
+  <%= f.submit "Submit",class: "btn btn-submit" %>
+  </div>
+
+  <% end %>
+       </div>
+    </div>
+  </div>
+</div>
+
 
 
 
@@ -229,6 +238,8 @@
             <button type="button" class="btn btn-primary">How? (click here)</button>
         </div>
 </div>
+
+<div id = 'footer'> </div>
 
 
 <div id="how">
@@ -443,4 +454,6 @@
            <p>Here's the complete video for full recap</p>
            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/ssPFrDaTK4w?start=0&end=15" frameborder="0" allowfullscreen></iframe></p>
            <p>SPORTS IS EDUCATION :)</p>
+
+
            

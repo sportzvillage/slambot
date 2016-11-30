@@ -27,6 +27,8 @@
     border-radius: 10px;
     color:#1C8527;
      outline:0;
+    font-family:"proxima nova soft";
+    font-weight:bold;
     
 }
 
@@ -49,7 +51,6 @@ body{
 	
 	padding-left:50px;
 	padding-right:50px;
-  font-family: "Myriad Set Pro"
   }
 
 
@@ -94,7 +95,7 @@ margin:0;
             #slamsubhead{
               font-size: 30px;
               text-align: center;
-              
+              font-family: "varela round";
               padding-left: 0px;
               padding-bottom: 65px;
               padding-top: 75px;
@@ -118,7 +119,7 @@ margin:0;
              height:80%;
              padding-top:0;
             }
-            .contactmodal,.signinmodal{
+            .contactmodal,.signinmodal,.aboutusmodel{
              width:400px;
              padding-top:0;
             }
