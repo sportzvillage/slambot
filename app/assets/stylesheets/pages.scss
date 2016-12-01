@@ -6,13 +6,12 @@
     float:right;
     clear:top;
     clear:bottom;
-    color: #5FCF80;
-    background-color:#FFFFFF;
-    border: 1px solid #5FCF80;
+    color: #FFFFFF;
+    background-color:#5FCF80;
     margin-right: 50px;
     margin-top:10px;
     margin-bottom:10px;
-    font-size:175%;
+    font-size:150%;
     border-radius: 10px;
     font-family:"helvetica";
     
@@ -49,9 +48,9 @@
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-    color: white;
-    background-color: #5FCF80;
-    border:none;
+    color: #5FCF80;
+    background-color: #FFFFFF;
+    border:1px solid #5FCF80;
 }
 
 .deviseform {
