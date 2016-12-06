@@ -52,9 +52,7 @@ $( ".btn-primary" ).click(function() {
     case "Our Changing Earth":
       $('#our-changing-earth1').fadeIn('slow');
     break; 
-    case "Sign Up":
-      $('#sign-up1').fadeIn('slow');
-    break; 
+    
   }
   $("html, body").animate({ scrollTop: $(document).height() }, 2000);
 }); 
