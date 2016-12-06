@@ -1,74 +1,59 @@
 $(function() {
-    $('#how').hide();
-    $('#lets-learn').hide();
-    $('#brazil').hide();
-    $('#portugal').hide();
-  $('#argentina').hide();
-  $('#list-of-chapters').hide();
-  $('#more-fun-facts').hide();
-  $('#inside-our-earth').hide();
-  $('#layers-of-earth').hide();
-  $('#crust').hide();
-  $('#mantle').hide();
-  $('#core').hide();
-  $('#more-metamorphic-rocks').hide();
-    $('#next-rock-type').hide();
-  $('#last-rock-type').hide();
-  $('#formation-of-rocks').hide();
+    $('#sounds-amazing1').hide();
+    $('#let-us-learn1').hide();
+    $('#brazil1').hide();
+    $('#portugal1').hide();
+  $('#argentina1').hide();
+  $('#main-menu1').hide();
+  $('#inside-our-earth1').hide();
+  $('#air1').hide();
+  $('#water1').hide();
+  $('#natural-vegetation-and-wildlife1').hide();
+  $('#our-changing-earth1').hide();
+  $('#sign-up1').hide();
+  
 
 $( ".btn-primary" ).click(function() {
   var value = $( this ).text();
   $( this ).closest('div').hide();
   $( this ).closest('div').parent().children('span').text(value).addClass('btn btn-primary').fadeIn(2000);
- 
+  
   switch(value){
-      case "How? (click here)":
-          $('#how').fadeIn('slow');
+      case "Sounds Amazing! (click here)":
+          $('#sounds-amazing1').fadeIn('slow');
       break;
-    case "Let's Learn!":
-      $('#lets-learn').fadeIn('slow');
+    case "Let us Learn!":
+      $('#let-us-learn1').fadeIn('slow');
       break;
       case "Brazil":
-          $('#brazil').fadeIn('slow');
+          $('#brazil1').fadeIn('slow');
     break;
     case "Argentina":
-          $('#argentina').fadeIn('slow');
+          $('#argentina1').fadeIn('slow');
     break;
     case "Portugal":
-      $('#portugal').fadeIn('slow');
-    break;
-    case "List of Chapters":
-      $('#list-of-chapters').fadeIn('slow');
-    break;
-    case "More fun facts!":
-      $('#more-fun-facts').fadeIn('slow');
+      $('#portugal1').fadeIn('slow');
     break;
     case "Inside Our Earth":
-      $('#inside-our-earth').fadeIn('slow');
+      $('#inside-our-earth1').fadeIn('slow');
     break;
-    case "Layers of Earth":
-      $('#layers-of-earth').fadeIn('slow');
+    case "Main Menu":
+      $('#main-menu1').fadeIn('slow');
     break;
-    case "Crust":
-      $('#crust').fadeIn('slow');
+    case "Air":
+      $('#air1').fadeIn('slow');
     break;
-    case "Mantle":
-      $('#mantle').fadeIn('slow');
+    case "Water":
+      $('#water1').fadeIn('slow');
     break;
-    case "Core":
-      $('#core').fadeIn('slow');
+    case "Natural Vegetation & Wildlife":
+      $('#natural-vegetation-and-wildlife1').fadeIn('slow');
     break;
-    case "More Metamorphic Rocks":
-      $('#more-metamorphic-rocks').fadeIn('slow');
+    case "Our Changing Earth":
+      $('#our-changing-earth1').fadeIn('slow');
     break;
-    case "Next Rock Type":
-      $('#next-rock-type').fadeIn('slow');
-    break;
-    case "Last Rock Type":
-      $('#last-rock-type').fadeIn('slow');
-    break;
-    case "Formation of Rocks":
-      $('#formation-of-rocks').fadeIn('slow');
+    case "Sign Up":
+      $('#sign-up1').fadeIn('slow');
     break;
   }
   $("html, body").animate({ scrollTop: $(document).height() }, 2000);
