@@ -10,6 +10,7 @@ $(function() {
   $('#water1').hide();
   $('#natural-vegetation-and-wildlife1').hide();
   $('#our-changing-earth1').hide();
+  $('#sign-up1').hide();
   
 
 $( ".btn-primary" ).click(function() {
