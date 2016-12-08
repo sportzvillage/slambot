@@ -224,29 +224,7 @@
 
 
 
-
-
-<div class="header" >
-    <div class="row" >
-        <div class="col-sm-4" >
-          <% if user_signed_in? %>
-                          <%= link_to "Logout", destroy_user_session_path,:method => :delete %>
-                        <% else %>
-                          <button type="button" class="btn btn-head" id="opener-4">Sign In</button>
-                        <% end %>
-              
-         </div>
-         <div class="col-sm-4" >
-               <button type="button" class="btn btn-head"  id="opener-3">Contact Us</button>
-         </div>
-         <div class="col-sm-4" >
-          <%= link_to 'Signup', signup_path, class: "btn btn-head", type: "button" %>
-         </div> 
-</div>
-
-    <div id="contactus" title="Contact Us">
-       <div class="contactnumber">
-          <p>Get in touch at +91-9619139810</p>
+   
 <div class = "starting_text">
   <div class = "left-text">
       <p> Hello! I am Slam</p>
@@ -373,10 +351,12 @@
     <button type="button" class="btn btn-primary">Water</button>
 
     <button type="button" class="btn btn-primary">Natural Vegetation & Wildlife</button>
-
-
   </div>
 </div>
+
+
+
+
 
 <div id="inside-our-earth1">
   <div class='left-text'>
@@ -385,8 +365,10 @@
 
   </div>
     <span></span>
-      <button class="btn btn-head" data-toggle="modal" data-target=".bd-example-modal-lg-signup">Signup</button          
-
+    <div class="col-sm-12">
+      <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg-signup">Signup</button> 
+       </div>
+   
 </div>
 
 <div id="our-changing-earth1">
@@ -396,7 +378,9 @@
 
   </div>
     <span></span>
-     <button class="btn btn-head" data-toggle="modal" data-target=".bd-example-modal-lg-signup">Signup</button          
+    <div class="col-sm-12">
+     <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg-signup">Signup</button>
+     </div>        
 
 </div>
 
@@ -407,7 +391,9 @@
 
   </div>
     <span></span>
-     <button class="btn btn-head" data-toggle="modal" data-target=".bd-example-modal-lg-signup">Signup</button          
+    <div class="col-sm-12">
+     <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg-signup">Signup</button>
+     </div>         
 
 </div>
 
@@ -418,7 +404,9 @@
 
   </div>
     <span></span>
-      <button class="btn btn-head" data-toggle="modal" data-target=".bd-example-modal-lg-signup">Signup</button          
+    <div class="col-sm-12">
+      <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg-signup">Signup</button>
+      <div>        
 
 </div>
 
@@ -429,5 +417,7 @@
 
   </div>
     <span></span>
-    <button class="btn btn-head" data-toggle="modal" data-target=".bd-example-modal-lg-signup">Signup</button          
+    <div class="col-sm-12">
+    <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg-signup">Signup</button>
+    </div>       
 </div>
