@@ -15,21 +15,29 @@ $(function() {
 
 $( ".btn-primary" ).click(function() {
   var value = $( this ).text();
+  var idName = $( this ).attr('id');
+
+  // Extract class name in case of yes or no response
+  if (value == "Yes" || value == "No"){
+    var text = idName;
+  }
+  else {text = value;}
+
   $( this ).closest('div').hide();
   $( this ).closest('div').parent().children('span').text(value).addClass('btn btn-primary').fadeIn(2000);
   
-  switch(value){
-      case "Sounds Amazing! (click here)":
-          $('#sounds-amazing1').fadeIn('slow');
-      break;
-    case "Let us Learn!":
+  switch(text){
+    case "Sounds Amazing! (click here)":
+      $('#sounds-amazing1').fadeIn('slow');
+    break;
+    case "yes1":
       $('#let-us-learn1').fadeIn('slow');
-      break;
-      case "Brazil":
-          $('#brazil1').fadeIn('slow');
+    break;
+    case "Brazil":
+      $('#brazil1').fadeIn('slow');
     break;
     case "Argentina":
-          $('#argentina1').fadeIn('slow');
+      $('#argentina1').fadeIn('slow');
     break;
     case "Portugal":
       $('#portugal1').fadeIn('slow');
@@ -52,7 +60,6 @@ $( ".btn-primary" ).click(function() {
     case "Our Changing Earth":
       $('#our-changing-earth1').fadeIn('slow');
     break; 
-    
   }
   $("html, body").animate({ scrollTop: $(document).height() }, 2000);
 }); 
