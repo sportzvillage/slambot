@@ -29,6 +29,29 @@
      outline:0;
     font-family:"proxima nova soft";
     font-weight:bold;
+}
+
+.btn-bottom-signup {
+    float:right;
+    clear:top;
+    clear:bottom;
+    color: #FFFFFF;
+    background-color:#5FCF80;
+    margin-right: 50px;
+    margin-top:10px;
+    margin-bottom:10px;
+    font-size:150%;
+    border-radius: 10px;
+    font-family:"helvetica";
+    border:1px solid #5FCF80;
+}
+
+.btn-bottom-signup:hover,
+.btn-bottom-signup:focus,
+.btn-bottom-signup:active {
+    color: #5FCF80;
+    background-color: #FFFFFF;
+    border:1px solid #5FCF80;
     
 }
 

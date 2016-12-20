@@ -47,6 +47,12 @@ $( ".btn-primary" ).click(function() {
     break;
     case "Main Menu":
       $('#main-menu1').fadeIn('slow');
+      $('#starting_text').hide();
+      $('#sounds-amazing1').hide();
+      $('#let-us-learn1').hide();
+      $('#brazil1').hide();
+      $('#portugal1').hide();
+      $('#argentina1').hide();
     break;
     case "Air":
       $('#air1').fadeIn('slow');
