@@ -1,6 +1,7 @@
 $(function() {
+  // welcome
     $('#sounds-amazing1').hide();
-    $('#let-us-learn1').hide();
+    $('#lets-learn').hide();
     $('#brazil1').hide();
     $('#portugal1').hide();
   $('#argentina1').hide();
@@ -11,6 +12,9 @@ $(function() {
   $('#natural-vegetation-and-wildlife1').hide();
   $('#our-changing-earth1').hide();
   $('#sign-up1').hide();
+
+  //index
+  
   
 
 $( ".btn-primary" ).click(function() {
@@ -30,8 +34,8 @@ $( ".btn-primary" ).click(function() {
     case "Sounds Amazing! (click here)":
       $('#sounds-amazing1').fadeIn('slow');
     break;
-    case "yes1":
-      $('#let-us-learn1').fadeIn('slow');
+    case "Let's Learn":
+      $('#lets-learn').fadeIn('slow');
     break;
     case "Brazil":
       $('#brazil1').fadeIn('slow');
@@ -67,7 +71,7 @@ $( ".btn-primary" ).click(function() {
       $('#our-changing-earth1').fadeIn('slow');
     break; 
   }
-  $("html, body").animate({ scrollTop: $(document).height() }, 2000);
+  // $("html, body").animate({ scrollTop: $(document).height() }, 2000);
 }); 
 
 $("#new_message").validate({

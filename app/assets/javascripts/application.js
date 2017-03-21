@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= pages
+//= index
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .

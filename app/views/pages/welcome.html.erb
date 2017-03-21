@@ -1,27 +1,66 @@
-<div class="header" >
+
 
   
-  <div class="row">
-    <div class="col-sm-4"><div id = "slamhead">slam</div></div>
 
 
-    <div class="col-sm-8" id = "rightnav">
-      
-          
-  <button class="btn btn-head" data-toggle="modal" data-target=".bd-example-modal-lg-aboutus">AboutUs</button>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+  <div id= "slamsubhead"> <p>Learn Geography - Through Sports</p> 
+    <p id= "slamsubhead1">Free access to NCERT books re-designed with informative images, educational videos and fun facts</p>
+    <p id= "slamsubhead1"></p>
+  </div> 
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+
+    <div class="item active">
+      <%= image_tag "image1.svg", size: "630x600" %>
+    </div>
+
+    <div class="item">
+      <%= image_tag "image2.svg", size: "630x600" %>
+    </div>
+
+    <div class="item">
+      <%= image_tag "image3.svg", size: "630x600" %>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  
+</div>
+
+<script>
+    $('.carousel').carousel({
+        interval: 10 //changes the speed
+    })
+    </script>
+
+
+
+
+    
+
+
+
+
+  
 
 <div class="modal fade bd-example-modal-lg-aboutus" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="aboutusmodal modal-dialog modal-lg">
     <div class="modal-content">
       <h3 class="modalheading">About US</h3>
-      <div>ENTERTEXT</div>
-
-
+      <div>EduSports works with schools to implement a best-in-class Physical Education and Sports programme. Slam, an Edusports initiative, helps to learn academic concepts via sports thereby making them more fun and engaging!</div>
+      <div class= "social-media">
+        <a href = "http://www.facebook.com/SportsIsEducation"><%= image_tag "facebook.png", size: "50x50" %></a>
+        <a href= "http://www.twitter.com/sportsisedu"><%= image_tag "twitter.png", size: "50x50" %></a>
+        <a href="http://www.edusports.in"><%= image_tag "edusports.jpg", size: "100x100" %></a>
+        </div>
     </div>
   </div>
 </div>
 
-<button class="btn btn-head" data-toggle="modal" data-target=".bd-example-modal-lg-signin">Login</button>
 
 <div class="modal fade bd-example-modal-lg-signin" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="signinmodal modal-dialog modal-lg">
@@ -67,7 +106,7 @@
 
 
 
- <button class="btn btn-head" data-toggle="modal" data-target=".bd-example-modal-lg-signup">Signup</button>
+ 
 
 <div class="modal fade bd-example-modal-lg-signup" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="signupmodal modal-dialog modal-lg">
@@ -76,16 +115,31 @@
 <div class="row"> 
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   
-  <div class="col-sm-8"><h3 class="modalsubheading">Student Details</h3>
-    <div class="col-sm-6">
-
+  
+<div class="col-sm-6">
       <div class="field">
     <div class ="form-text">Full Name<span id="asterik">*</span></div>
     <%= f.text_field :name, autofocus: true, :required => true %>
   </div>
 
-  
+ 
+
   <div class="field">
+    <div class ="form-text">Age<span id="asterik">*</span></div>
+    <%= f.text_field :age, autofocus: true, :required => true %>
+  </div>
+
+  <div class="field">
+    <div class ="form-text">Phone Number<span id="asterik">*</span></div>
+    <%= f.text_field :number, autofocus: true, :required => true %>
+  </div> 
+
+</div>
+  
+
+
+  <div class="col-sm-6">
+      <div class="field">
     <div class ="form-text">Email Id<span id="asterik">*</span></div>
     <%= f.text_field :email, autofocus: true, :required => true%>
   </div>
@@ -102,55 +156,12 @@
     <div class ="form-text">Confirm Password<span id="asterik">*</span></div>
     <%= f.password_field :password_confirmation, autocomplete: "off", :required => true %>
   </div>
-
-</div>
-     <div class="col-sm-6"> 
       
-<div class="field">
-    <div class ="form-text">Phone Number<span id="asterik">*</span></div>
-    <%= f.text_field :number, autofocus: true, :required => true %>
-  </div>  
-  
-  <div class="field">
-    <div class ="form-text">School</div>
-    <%= f.text_field :school, autofocus: true %>
-  </div>
-
-  <div class="field">
-    <div class ="form-text">Standard</div>
-    <%= f.text_field :standard, autofocus: true %>
-  </div>
-
-  <div class="field">
-    <div class ="form-text">Section</div>
-    <%= f.text_field :standard, autofocus: true %>
-  </div>
 
 </div>
  </div>
-  <div class="col-sm-4"><h3 class="modalsubheading">Parents Details</h3>
-    <div class="field">
-    <div class ="form-text">Name<span id="asterik">*</span></div>
-    <%= f.text_field :parentname, autofocus: true, :required => true %>
-</div>
+  
 
-<div class="field">
-    <div class ="form-text">Relationship With Mentioned Person<span id="asterik">*</span></div>
-    <%= f.text_field :relationship, autofocus: true, :required => true %>
-</div>
-
-<div class="field">
-    <div class ="form-text">Phone Number<span id="asterik">*</span></div>
-    <%= f.text_field :parentnumber, autofocus: true, :required => true %>
-</div>
-
-<div class="field">
-    <div class ="form-text">Email Id<span id="asterik">*</span></div>
-    <%= f.text_field :parentemail, autofocus: true, :required => true %>
-</div>
-
-  </div>
-</div>
 <div class = "row" id="signupsubmit"><div class="actions">
     <%= f.submit "Submit",class: "btn btn-submit" %>
   </div>
@@ -160,7 +171,7 @@
   </div>
 </div>
 
-<button class="btn btn-head" data-toggle="modal" data-target=".bd-example-modal-lg">Contact Us</button>
+
 
 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="contactmodal modal-dialog modal-lg">
@@ -211,12 +222,12 @@
 
    
    
-    </div>
-    <div id ="slamsubhead">For Class 7. Learn Geography through Sports</div>
+   
+    
         
-  </div>
+
   
-</div>
+
 
 
 
@@ -251,11 +262,11 @@
 
   <span></span>
     <div class="col-sm-12">
-        <button type="button" class="btn btn-primary" id="yes1">Yes</button>
+        <button type="button" class="btn btn-primary" >Let's Learn</button>
     </div>
 </div>
 
-<div id="let-us-learn1">
+<div id="lets-learn">
   <div class='left-text'>
     <p> Let us go through an example to understand how this will work</p>
     <p> Fun Quiz: Do you know Messi is from which country?</p>

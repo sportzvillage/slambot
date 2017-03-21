@@ -1,235 +1,1710 @@
-<%= link_to "Logout", destroy_user_session_path,:method => :delete, :class => 'btn btn-head' %>
-<div class = "starting_text">
-    <div class = "left-text">
-        <p>Hello! My name is SLAM</p>
-        <p>I love Sports and Geography</p>
-        <p>I will help you learn Geography through Sports :)</p>
-    </div>
-
-    <span></span>
-        <div class="col-sm-12">
-            <button type="button" class="btn btn-primary">How? (click here)</button>
-        </div>
-</div>
 
 
-<div id="how">
-    <div class='left-text'>
-        <p>Geography is about everything that is around us </p>
-           <p>We will be going through a lot of sports images, videos, fun facts, quizzes! </p>
-           <p>Just click on boxes on right to chat with me!</p>
-    </div>
-    <span></span>
-        <div class="col-sm-12">
-            <button type="button" class="btn btn-primary">Let's Learn!</button>
-        </div>
-</div>
+<!-- Contact US dialog -->
 
-<div id="lets-learn">
-    <div class='left-text' class="row">
-        <p>FUN QUIZ:</p>
-           <p>Messi is from which country?</p>
-           <p><img src="https://i.ytimg.com/vi/j9u1Uj5CPmg/maxresdefault.jpg" height="250" width="300"></p>
-    </div>
-    <span></span>
-        <div class="col-sm-12">
-            <button type="button" class="btn btn-primary">Brazil</button>
-            <button type="button" class="btn btn-primary">Argentina</button>
-            <button type="button" class="btn btn-primary">Portugal</button>           
-        </div>
-</div>
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="contactmodal modal-dialog modal-lg">
+    <div class="modal-content">
+      <h3 class="modalheading">Contact Us</h3>
+      <div class="contactnumber">
+          <p>Get in touch with us at +91-9619139810</p>
+          <p>OR</p>
+          <p>Drop us a message</p>
 
-<div id="brazil">
-    <div class='left-text'>
-           <p>OOPS! Wrong answer. The correct answer is Argentina</p>
-           <p>By land area, Argentina is the 2nd largest country in South America and the 8th largest country in the World</p>
-           <p><img src="http://i689.photobucket.com/albums/vv256/xxxirapuatoxxx/messi.png" height="300" width="200"></img></p>
-          
-    </div>
-    <span></span>
-    <div class="col-sm-12">
-        <button type="button" class="btn btn-primary">List of chapters</button>
-        <button type="button" class="btn btn-primary">More fun facts!</button>
-    </div>
-</div>
+          <%= form_for Message.new do |f| %>
 
-<div id="portugal">
-    <div class='left-text'>
-           <p>OOPS! Wrong answer. The correct answer is Argentina</p>
-           <p>By land area, Argentina is the 2nd largest country in South America and the 8th largest country in the World</p>
-           <p><img src="http://i689.photobucket.com/albums/vv256/xxxirapuatoxxx/messi.png" height="300" width="200"></img></p>
-           
-          
-    </div>
-    <span></span>
-    <div class="col-sm-12">
-        <button type="button" class="btn btn-primary">List of chapters</button>
-        <button type="button" class="btn btn-primary">More fun facts!</button>
-    </div>
-</div>
+  <div class="field" >
+  <div class ="form-text">Name<span id="asterik">*</span></div>
+  <%= f.text_field :name%><br />
+  </div>
 
-<div id="argentina">
-    <div class='left-text'>
-           <p>Right answer!</p>
-           <p>By land area, Argentina is the 2nd largest country in South America and the 8th largest country in the World</p>
-           <p><img src="http://i689.photobucket.com/albums/vv256/xxxirapuatoxxx/messi.png" height="300" width="200"></img></p>
-           
+  <div class="field">
+  <div class ="form-text">Phone Number<span id="asterik">*</span></div>
+  <%= f.text_field :number%><br />
+  </div>
+
+  <div class="field">
+    <div class ="form-text">Message<span id="asterik">*</span></div>
+    <%= f.text_area :message %><br />
+  </div>
+
+  <div class="action" font-color="white">
+  <%= f.submit "Submit",class: "btn btn-submit" %>
+  </div>
+
+  <% end %>
        </div>
-    <span></span>
-    <div class="col-sm-12">
-        <button type="button" class="btn btn-primary">More fun facts!</button>
-        <button type="button" class="btn btn-primary">List of Chapters</button>
     </div>
+  </div>
 </div>
 
-<div id="list-of-chapters">
-    <div class='left-text'>
-           <p>Hey! Select the chapter you would like to learn today:</p>
-           <p><img src="http://ncertbooks.prashanthellina.com/class_7.SocialScience.OurEnvironment/image.jpg" height="300" width="200"></img></p>
-           
+
+<!-- About US dialog -->
+
+<div class="modal fade bd-example-modal-lg-aboutus" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="aboutusmodal modal-dialog modal-lg">
+    <div class="modal-content">
+      <h3 class="modalheading">About Us</h3>
+      <div>EduSports works with schools to implement a best-in-class Physical Education and Sports programme. Slam, an Edusports initiative, helps to learn academic concepts via sports thereby making them more fun and engaging!</div>
+      <div class= "social-media">
+        <a href="http://www.edusports.in"><%= image_tag "edusports.jpg", size: "150x15  0" %></a>
+        <a href = "http://www.facebook.com/SportsIsEducation"><%= image_tag "facebook.png", size: "50x50" %></a>
+        <a href= "http://www.twitter.com/sportsisedu"><%= image_tag "twitter.png", size: "50x50" %></a>
+        
+        </div>
     </div>
-    <span></span>
-    <div class="col-sm-12">
-        <button type="button" class="btn btn-primary">Inside Our Earth</button>
-    </div>
+  </div>
 </div>
 
-<div id="more-fun-facts">
-    <div class='left-text'>
-           <p>Hey! Right now I had only this. And one more chapter from your book:</p>   
-    </div>
-    <span></span>
-    <div class="col-sm-12">
-        <button type="button" class="btn btn-primary">Inside Our Earth</button>
-    </div>
+<!-- Bot Starts -->
+
+
+<div class = "starting_text-index">
+
+    <div class = "left-text">
+
+        <p>Hey!</p>
+
+        <p>Welcome to the Slambook Club :)</p>
+
+        <p>You can now start learning chapters from the book ‘Our Environment’ - Geography for Class 7 </p>
+
+ <p><img src="http://ncertbooks.prashanthellina.com/class_7.SocialScience.OurEnvironment/image.jpg" height="350" width="300"></p>   
+
 </div>
+
+
+<span></span>
+        <div class="col-sm-12">
+
+            <button type="button" class="btn btn-primary" id="main-menu-index">Main Menu</button>
+
+        </div>
+
+</div>
+
+ 
+
+<div id="main-menu2">
+
+                <div class='left-text'>
+
+                                <p>Please select the chapter you want to learn</p>
+
+                </div>
+
+               
+
+                <span></span>
+
+                <div class="col-sm-12">
+
+<button type="button" class="btn btn-primary" id="life-in-deserts-chapter">Life in Deserts</button>
+
+<button type="button" class="btn btn-primary" id="natural-vegetation-and-wildlife-chapter">Natural Vegetation and Wildlife</button>
+
+<button type="button" class="btn btn-primary" id="water-chapter">Water</button>
+
+<button type="button" class="btn btn-primary" id="air-chapter">Air</button>
+
+<button type="button" class="btn btn-primary" id="our-changing-earth-chapter">Our Changing Earth</button>
+
+<button type="button" class="btn btn-primary" id="inside-our-earth-chapter">Inside Our Earth</button>
+</div>
+
+</div>
+
+
+
+<div id="main-menu10">
+
+                <div class='left-text'>
+
+                                <p>Please select the chapter you want to learn</p>
+
+                </div>
+
+               
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+<button type="button" class="btn btn-primary" id="life-in-deserts-chapter">Life in Deserts</button>
+
+<button type="button" class="btn btn-primary" id="natural-vegetation-and-wildlife-chapter">Natural Vegetation and Wildlife</button>
+
+<button type="button" class="btn btn-primary" id="water-chapter">Water</button>
+
+<button type="button" class="btn btn-primary" id="air-chapter">Air</button>
+
+<button type="button" class="btn btn-primary" id="our-changing-earth-chapter">Our Changing Earth</button>
+
+<button type="button" class="btn btn-primary" id="inside-our-earth-chapter">Inside Our Earth</button>
+</div>
+
+</div>
+
+
+<!-- Water chapter -->
+
+<div id="water">
+                <div class='left-text'>
+<p>Water is absolutely essential for survival</p>
+
+<p>Water alone can quench our thirst when we are thirsty</p>
+
+<p><img src="http://appreciategoods.com/wp-content/uploads/2016/09/Body-Water-Health-And-Medical-Infographic.jpg" height="350" width="300"></p>
+
+<p>We all know that three-fourth of the earth surface is covered by water</p>
+
+<p>If there is more water than land on this earth, why do so many countries face water scarcity?</p>
+</div>
+        <span></span>
+        <div class="col-sm-12">
+<button type="button" class="btn btn-primary">Show Answer</button>
+        </div>
+</div>
+
+<div id="show-answer">
+
+                <div class='left-text'>
+
+                                <p> Because, around 97% of worlds water is Saline Water</p>
+
+<p>Dead sea in Israel has salinity of 45 parts per thousand</p>
+
+<p>Swimmers can float in it because the increased salt content make it dense</p>
+
+<p><iframe width="854" height="480" src="https://www.youtube.com/embed/Fmzb6J2a79s?start=0&end=125" frameborder="0" allowfullscreen></iframe></iframe></p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+                                                <button type="button" class="btn btn-primary">Ocean Circulation</button>
+
+                </div>
+
+</div>
+
+ 
+<div id="ocean-circulation">
+
+                <div class='left-text'>
+
+<p> Unlike the calm waters of ponds and lakes, ocean water keeps moving continuously</p>
+
+<p>It is never still. The movements that occur in oceans can be broadly categorised as:</p> 
+
+<p>Waves, Tides and Currents</p>
+
+<p>Waves is when the water on the surface of the ocean rises and falls alternately</p>
+
+<p>The curiosity of people to ride these waves has lead discovery of some amazing sports</p> 
+
+<p>Like surfing</p> 
+
+<p><iframe width="854" height="480" src="https://www.youtube.com/embed/_UUjJJQ02n0?start=269&end=349" frameborder="0" allowfullscreen></iframe></p>
+
+<p><img src="https://www.exploratorium.edu/theworld/surfing/physics/images/catchwave.gif" height="200" width="300"></p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+                                                <button type="button" class="btn btn-primary">Ocean Currents</button>
+
+                </div>
+
+</div>
+
+ 
+
+<div id="ocean-currents">
+
+                <div class='left-text'>
+
+                                <p>The Ocean Currents are generated from the forces acting upon the water</p>
+
+ 
+
+<p>Like the earth's rotation, the wind, the temperature and salinity differences and the gravitation of the moon</p>
+
+ 
+
+<p>Understanding the Ocean current is very important to navigating a Yatch</p>
+
+<p>The first recorded yatch is Cleopatra’s galley built in 222 BC</p>
+
+<p>The Volvo Ocean race is a yatch around the world race held every 3 years</p> 
+
+<p><iframe width="854" height="480" src="https://www.youtube.com/embed/3oSg9cYMlOk?start=0&end=103" frameborder="0" allowfullscreen></iframe></p><p>Having learnt so much about water and water bodies, we must not forget that it is essential for us to use it wisely</p>
+
+<p>What do you think about the chapter?</p>
+
+                </div>
+
+                
+
+<span></span>
+
+                                <div class="col-sm-12">
+
+<button type="button" class="btn btn-primary" id="amazing-chapter-index1">Amazing Chapter</button>
+
+<button type="button" class="btn btn-primary" id="not-that-interesting-index1">Not That Interesting</button>
+
+</div>
+
+</div>
+
+<div id="amazing-chapter1">
+
+                <div class='left-text'>
+
+<p>Awesome! Glad that you liked the chapter!</p>
+<p>More fun ahead</p>
+<p>#SportsIsEducation</p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+                                    <button type="button" class="btn btn-primary" id="back-main-menu">Back To Main Menu</button>
+
+                </div>
+
+</div>
+
+
+<div id="not-that-interesting1">
+
+                <div class='left-text'>
+
+<p>Ohh! Thanks for pointing it out. Will add more interesting concepts :)</p>
+<p>Please share what did you not like by clicking on "Contact us" button on top of the page</p>
+<p>#SportsIsEducation</p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+                                                <button type="button" class="btn btn-primary" id="back-main-menu">Back To Main Menu</button>
+
+                </div>
+
+</div>
+
+<!-- inside our earth chapter -->
 
 <div id="inside-our-earth">
-    <div class='left-text'>
-           <p>Intro to the chapter</p>
-           <p><iframe width="560" height="315" src="https://www.youtube.com/watch?v=ssPFrDaTK4w?start=0&end=15" frameborder="0" allowfullscreen></iframe></p>   
-    </div>
-    <span></span>
-        <div class="col-sm-12">
-            <button type="button" class="btn btn-primary">Layers of Earth</button>
-        </div>
+                <div class='left-text'>
+<p>This is about Earth – the planet that we live on</p>
+
+                                <p>As we know, Earth consists of rocks and water bodies. Time to find out what’s inside the earth</p>
+
+                                <p><img src="https://thelistlove.files.wordpress.com/2014/03/26.jpg" height="300" width="350"></p>
+
+                                <p>The world of sports is majorly dominated by games played using balls and racquets or bats</p>
+
+                                <p>One of the games India loves watching is Cricket. And why not!</p>
+
+                                <p><img src="https://s-media-cache-ak0.pinimg.com/originals/92/6d/42/926d42c8839a3121243225ef191520b9.jpg" height="300" width="300"></p>
+
+<p>India has produced some amazing cricketing talent including the Master – Sachin Tendulkar</p>
+
+<p> Which one of the following is your favourite?</p>
+
+                </div>
+
+               
+
+                <span></span>
+
+<div class="col-sm-12">
+
+<button type="button" class="btn btn-primary">Master Blaster Sachin</button>
+
+<button type="button" class="btn btn-primary">Cool Calm Dhoni</button>
+
+<button type="button" class="btn btn-primary">Stylish Kohli</button>
+
+                </div>
 </div>
 
-<div id="layers-of-earth">
-    <div class='left-text'>
-           <p>Earth is very similar to a 'Cricket Ball'</p>
-           <p>See how</p>
-           <p><iframe width="560" height="315" src="https://www.youtube.com/watch?v=ssPFrDaTK4w?start=17&end=57" frameborder="0" allowfullscreen></iframe></p>   
-           <p>QUICK QUIZ: What is the middle layer of earth called?</p>
-    </div>
-    <span></span>
-        <div class="col-sm-12">
-            <button type="button" class="btn btn-primary">Crust</button>
-            <button type="button" class="btn btn-primary">Mantle</button>
-            <button type="button" class="btn btn-primary">Core</button>
-        </div>
+<div id="master-blaster-sachin">
+                <div class='left-text'>
+                                <p><img src="http://p.imgci.com/db/PICTURES/CMS/122900/122983.jpg" height="300" width="230"></p>
+                                <p>Interestingly Earth is very similar to a Cricket Ball – Outside as well as Inside</p>
+<p>Watch this video to know how</p>
+                                <p><iframe width="854" height="480" src="https://www.youtube.com/embed/ssPFrDaTK4w?start=32&end=63" frameborder="0" allowfullscreen></iframe></p>
+<p> Quick Question – What’s the middle layer of the Earth?</p>
+</div>
+                
+                <span></span>
+                                <div class="col-sm-12">
+                                                <button type="button" class="btn btn-primary">Mantle</button>
+                                                <button type="button" class="btn btn-primary">Core</button>
+                                                <button type="button" class="btn btn-primary">Crust</button>
+                </div>
 </div>
 
-<div id="crust">
-    <div class='left-text'>
-           <p>Ohh! Wrong answer. The correct answer is 'Mantle'</p>
-           <p>Lets move on to the next part of the chapter - ROCKS</p>
-           <p>The earth’s crust is made up of various types of rocks</p>
-           <p>Panathenaic stadium in Greece is completely made up of Marble - A Metamorphic Rock</p>
-           <p>It hosted the first olympis games of the Modern Era in 1896</p>
-           <p><img src="http://president.gr/wp-content/uploads/2015/10/PANATHINAIKO03-900x600.jpg" height="200" width="300"></img></p>
-    </div>
-    <span></span>
-        <div class="col-sm-12">
-            <button type="button" class="btn btn-primary">More Metamorphic Rocks</button>
-            <button type="button" class="btn btn-primary">Next Rock Type</button>
-        </div>
+<div id="cool-calm-dhoni">
+                <div class='left-text'>
+                                <p><img src="http://media.indiatimes.in/media/content/2016/Jun/dhonikeepingkeeda_1466178693.jpg" height="200" width="250"></p>
+                                <p>Interestingly Earth is very similar to a Cricket Ball – Outside as well as Inside</p>
+<p>Watch this video to know how</p>
+                                <p><iframe width="854" height="480" src="https://www.youtube.com/embed/ssPFrDaTK4w?start=32&end=63" frameborder="0" allowfullscreen></iframe></p>
+<p> Quick Question – What’s the middle layer of the Earth?</p>
+</div>
+                
+                <span></span>
+                                <div class="col-sm-12">
+                                                <button type="button" class="btn btn-primary">Mantle</button>
+                                                <button type="button" class="btn btn-primary">Core</button>
+                                                <button type="button" class="btn btn-primary">Crust</button>
+                </div>
+</div>
+ 
+<div id="stylish-kohli">
+                <div class='left-text'>
+                                <p><img src="http://images.indianexpress.com/2015/11/viratkohlipti-m.jpg" height="200" width="270"></p>
+                                <p>Interestingly Earth is very similar to a Cricket Ball – Outside as well as Inside</p>
+<p>Watch this video to know how</p>
+                                <p><iframe width="854" height="480" src="https://www.youtube.com/embed/ssPFrDaTK4w?start=32&end=63" frameborder="0" allowfullscreen></iframe></p>
+<p> Quick Question – What’s the middle layer of the Earth?</p>
+</div>
+                
+                <span></span>
+                                <div class="col-sm-12">
+                                                <button type="button" class="btn btn-primary">Mantle</button>
+                                                <button type="button" class="btn btn-primary">Core</button>
+                                                <button type="button" class="btn btn-primary">Crust</button>
+                </div>
 </div>
 
 <div id="mantle">
-    <div class='left-text'>
-           <p>Correct answer. Good Job! </p>
-           <p>Lets move on to the next part of the chapter - ROCKS</p>
-           <p>The earth’s crust is made up of various types of rocks</p>
-           <p>Panathenaic stadium in Greece is completely made up of Marble - A Metamorphic Rock</p>
-           <p>It hosted the first olympis games of the Modern Era in 1896</p>
-           <p><img src="http://president.gr/wp-content/uploads/2015/10/PANATHINAIKO03-900x600.jpg" height="200" width="300"></img></p>
-    </div>
-    <span></span>
-        <div class="col-sm-12">
-            <button type="button" class="btn btn-primary">More Metamorphic Rocks</button>
-            <button type="button" class="btn btn-primary">Next Rock Type</button>
-        </div>
+                <div class='left-text'>
+                                <p>Right Answer! Seems like learning from Sachin helped you a bit :D</p>
+                                <p>So the top most layer of Earth – Crust - is made up of Rock</p>
+                                <p> Rocks can be of different colour, size and texture</p>
+                                <p> The Clay Court of Tennis is made up of multiple layers of stones</p>
+                                <p> Checkout this video explaining how a clay court is prepared</p>
+                                <p> <iframe width="854" height="480" src="https://www.youtube.com/embed/0LH3rocRd1w?start=0&end=144" frameborder="0" allowfullscreen></iframe></p> 
+<p>Two of the rocks used in the clay court are limestone and Red bricks</p>
+<p>Both are Sedimentary Rocks</p>
+<p>Do you know how many Grand Slam tournaments are played in Tennis?</p>
+                </div>
+                
+                <span></span>
+                                <div class="col-sm-12">
+                                                <button type="button" class="btn btn-primary" >Two Grand Slams</button>
+                                                <button type="button" class="btn btn-primary" >Four Grand Slams</button>
+                                                <button type="button" class="btn btn-primary" id="i-dont-know1">I Dont Know</button>
+ 
+                </div>
 </div>
 
 <div id="core">
-    <div class='left-text'>
-           <p>Ohh! Wrong answer. The correct answer is 'Mantle'</p>
-           <p>Lets move on to the next part of the chapter - ROCKS</p>
-           <p>The earth’s crust is made up of various types of rocks</p>
-           <p>Panathenaic stadium in Greece is completely made up of Marble - A Metamorphic Rock</p>
-           <p>It hosted the first olympis games of the Modern Era in 1896</p>
-           <p><img src="http://president.gr/wp-content/uploads/2015/10/PANATHINAIKO03-900x600.jpg" height="200" width="300"></img></p>
-    </div>
-    <span></span>
-        <div class="col-sm-12">
-            <button type="button" class="btn btn-primary">More Metamorphic Rocks</button>
-            <button type="button" class="btn btn-primary">Next Rock Type</button>
-        </div>
+                <div class='left-text'>
+                                <p> Wrong Answer Buddy! Right answer is Mantle which is like ‘White Quilt’ between outermost leather and innermost core in a cricket ball</p>
+                                <p>So the top most layer of Earth – Crust - is made up of Rock</p>
+                                <p> Rocks can be of different colour, size and texture</p>
+                                <p> The Clay Court of Tennis is made up of multiple layers of stones</p>
+                                <p> Checkout this video explaining how a clay court is prepared</p>
+                                <p> <iframe width="854" height="480" src="https://www.youtube.com/embed/0LH3rocRd1w?start=0&end=144" frameborder="0" allowfullscreen></iframe></p> 
+<p>Two of the rocks used in the clay court are limestone and Red bricks</p>
+<p>Both are Sedimentary Rocks</p>
+<p>Do you know how many Grand Slam tournaments are played in Tennis?</p>
+                </div>
+                
+                <span></span>
+                                <div class="col-sm-12">
+                                                <button type="button" class="btn btn-primary" >Two Grand Slams</button>
+                                                <button type="button" class="btn btn-primary" >Four Grand Slams</button>
+                                                <button type="button" class="btn btn-primary" id="i-dont-know1">I Dont Know</button>
+ 
+                </div>
+</div>
+ 
+<div id="crust">
+                <div class='left-text'>
+                                <p> Wrong Answer Buddy! Right answer is Mantle which is like ‘White Quilt’ between outermost leather and innermost core in a cricket ball</p>
+                                <p>So the top most layer of Earth – Crust - is made up of Rock</p>
+                                <p> Rocks can be of different colour, size and texture</p>
+                                <p> The Clay Court of Tennis is made up of multiple layers of stones</p>
+                                <p> Checkout this video explaining how a clay court is prepared</p>
+                                <p> <iframe width="854" height="480" src="https://www.youtube.com/embed/0LH3rocRd1w?start=0&end=144" frameborder="0" allowfullscreen></iframe></p> 
+<p>Two of the rocks used in the clay court are limestone and Red bricks</p>
+<p>Both are Sedimentary Rocks</p>
+<p>Do you know how many Grand Slam tournaments are played in Tennis?</p>
+                </div>
+                
+                <span></span>
+                                <div class="col-sm-12">
+                                                <button type="button" class="btn btn-primary" >Two Grand Slams</button>
+                                                <button type="button" class="btn btn-primary" >Four Grand Slams</button>
+                                                <button type="button" class="btn btn-primary" id="i-dont-know1">I Dont Know</button>
+ 
+                </div>
 </div>
 
-<div id="more-metamorphic-rocks">
-    <div class='left-text'>
-           <p>Here are some examples</p>
-           <p><img src="http://image.slidesharecdn.com/typesofrocks-090612111123-phpapp02/95/types-of-rocks-14-728.jpg" height="450" width="450"></img></p>
-    </div>
-    <span></span>
-        <div class="col-sm-12">
-            <button type="button" class="btn btn-primary">Next Rock Type</button>
-        </div>
+<div id="two-grand-slams">
+                <div class='left-text'>
+                                <p>Wrong answer! No worries. Now is the time to know</p>
+                                <p> Australian Open, Roland Garros, Wimbledon and US Open - are the most prestigious individual competitions in tennis</p>
+<p>So, we have discussed cricket and tennis</p>
+<p>Let us learn a new game today. Heard of Curling?</p>
+                                <p><iframe width="854" height="480" src="https://www.youtube.com/embed/IOk9SVzqHsk?start=0&end=108" frameborder="0" allowfullscreen></iframe></p>
+<p>The rock with which curling is played is made up of Granite – An Igneuos Rock</p>
+<p>Formation of igneous rocks is amazingly unique. Refer this image</p>
+<p><img src="http://images.slideplayer.com/14/4195525/slides/slide_3.jpg" height="300" width="330"></p>
+                </div>
+                
+                <span></span>
+                                <div class="col-sm-12">
+                                                <button type="button" class="btn btn-primary">Metamorphic Rocks</button>
+                </div>
 </div>
 
-<div id="next-rock-type">
-    <div class='left-text'>
-           <p>Limestone and RedBrick are Sedimentary rocks.</p>
-           <p>These are used in Tennis clay courts</p>
-           <p>The earth’s crust is made up of various types of rocks</p>
-           <p><iframe width="560" height="315" src="https://www.youtube.com/watch?v=ssPFrDaTK4w?start=169&end=254" frameborder="0" allowfullscreen></iframe></p>
-           <p>Yay! We have covered 2 types of rocks. Only one remains.</p>
-    </div>
-    <span></span>
-        <div class="col-sm-12">
-            <button type="button" class="btn btn-primary">Last Rock Type</button>
-        </div>
+<div id="four-grand-slams">
+                <div class='left-text'>
+                                <p>Correct Answer!</p>
+                                <p> Australian Open, Roland Garros, Wimbledon and US Open - are the most prestigious individual competitions in tennis</p>
+<p>So, we have discussed cricket and tennis</p>
+<p>Let us learn a new game today. Heard of Curling?</p>
+                                <p><iframe width="854" height="480" src="https://www.youtube.com/embed/IOk9SVzqHsk?start=0&end=108" frameborder="0" allowfullscreen></iframe></p>
+<p>The rock with which curling is played is made up of Granite – An Igneuos Rock</p>
+<p>Formation of igneous rocks is amazingly unique. Refer this image</p>
+<p><img src="http://images.slideplayer.com/14/4195525/slides/slide_3.jpg" height="300" width="330"></p>
+                </div>
+                
+                <span></span>
+                                <div class="col-sm-12">
+                                                <button type="button" class="btn btn-primary">Metamorphic Rocks</button>
+                </div>
+</div>
+ 
+<div id="i-dont-know">
+                <div class='left-text'>
+                                <p>No worries. Now is the time to know</p>
+                                <p> Australian Open, Roland Garros, Wimbledon and US Open - are the most prestigious individual competitions in tennis</p>
+<p>So, we have discussed cricket and tennis</p>
+<p>Let us learn a new game today. Heard of Curling?</p>
+                                <p><iframe width="854" height="480" src="https://www.youtube.com/embed/IOk9SVzqHsk?start=0&end=108" frameborder="0" allowfullscreen></iframe></p>
+<p>The rock with which curling is played is made up of Granite – An Igneuos Rock</p>
+<p>Formation of igneous rocks is amazingly unique. Refer this image</p>
+<p><img src="http://images.slideplayer.com/14/4195525/slides/slide_3.jpg" height="300" width="330"></p>
+                </div>
+                
+                <span></span>
+                                <div class="col-sm-12">
+                                                <button type="button" class="btn btn-primary">Metamorphic Rocks</button>
+                </div>
 </div>
 
-<div id="last-rock-type">
-    <div class='left-text'>
-           <p>Igneous rocks are formed through the cooling and solidification of Magma or Lava</p>
-           <p>Granite is an example of Igneous rock</p>
-           <p>Granite plays a major part in one of the unique sports. Find out:</p>
-           <p><iframe width="560" height="315" src="https://www.youtube.com/watch?v=ssPFrDaTK4w?start=261&end=305" frameborder="0" allowfullscreen></iframe></p>
-           <p>We now know what type of rocks are there.</p>
-           <p>But how are these rocks formed?</p>
-    </div>
-    <span></span>
-        <div class="col-sm-12">
-            <button type="button" class="btn btn-primary">Formation of Rocks</button>
-        </div>
+<div id="metamorphic-rocks">
+                <div class='left-text'>
+<p>Rocks are also the useful as the stadiums in which game is played is made up of these</p>
+<p>One such stadium is Panathenaic Stadium in Athens Greece, where the first Modern Olympics were played in 1896</p>
+<p>The interesting fact is this stadium is completely made up of Marble – a Metamorphic Rock</p>
+<p>Watch some more facts about this stadium –</p>
+<p><iframe width="854" height="480" src="https://www.youtube.com/embed/Nd03NGgmz8g?start=0&end=110" frameborder="0" allowfullscreen></iframe></p>
+                </div>
+                
+                <span></span>
+                                <div class="col-sm-12">
+                                                <button type="button" class="btn btn-primary" id="minerals1">Minerals</button>
+                </div>
 </div>
 
-<div id="formation-of-rocks">
-    <div class='left-text'>
-           <p><iframe width="560" height="315" src="https://www.youtube.com/watch?v=ssPFrDaTK4w?start=78&end=167" frameborder="0" allowfullscreen></iframe></p>
-           <p>And we are done! This is what the chapter was all about</p>
-           <p>Here's the complete video for full recap</p>
-           <p><iframe width="560" height="315" src="https://www.youtube.com/watch?v=ssPFrDaTK4w" frameborder="0" allowfullscreen></iframe></p>
-           <p>SPORTS IS EDUCATION :)</p>
-           <p>Restart Chapter:</p>
-          
-    </div>
-    <span></span>
-        <div class="col-sm-12">
-            <button type="button" class="btn btn-primary">Inside Our Earth</button>
-        </div>
+<div id="minerals">
+                <div class='left-text'>
+<p>Just a revision – There are 3 major types of rocks – Igneous, Sedimentary and Metamorphic Rocks</p>
+<p>These rocks in turn are made up of Minerals</p> 
+<p>Minerals are naturally occurring having certain physical properties and definite chemical composition</p>
+<p>For example – coal, natural gas, petroleum, iron, aluminum, gold, uranium etc</p>
+<p>See how Fuel, which is a mineral, used in F1 cars has gone through quite a journey</p>
+<p><iframe width="854" height="480" src="https://www.youtube.com/embed/S6ZPjU8TVm4?start=4&end=94" frameborder="0" allowfullscreen></iframe></p>
+<p>Do you know who this F1 legend is?</p>
+<p><img src="http://cdn.images.express.co.uk/img/dynamic/galleries/x701/103454.jpg" height="300" width="270"></p>
 </div>
+                
+                <span></span>
+                                <div class="col-sm-12">
+                                                <button type="button" class="btn btn-primary" >Hamilton</button>
+                                                <button type="button" class="btn btn-primary" >Schumacher</button>
+                </div>
+</div>
+
+<div id="hamilton">
+                <div class='left-text'>
+                                <p>Wrong Answer! Right answer is Schumacher</p>
+                                <p>Did you know Narain Kartikeyan was the first F1 racing driver from India</p>
+<p><img src="http://www.thehindu.com/multimedia/dynamic/02478/KARTHIKEYAN_2478262f.jpg" height="300" width="300"></p>
+<p>With this we are done with the chapter – Inside our Earth</p>
+<p>Tell me how did you like it?</p>
+                </div>
+                
+                <span></span>
+                                <div class="col-sm-12">
+<button type="button" class="btn btn-primary" id="amazing-chapter-index2">Amazing Chapter</button>
+                                <button type="button" class="btn btn-primary" id="not-that-interesting-index2">Not That Interesting</button>
+</div>
+</div>
+ 
+<div id="schumacher">
+                <div class='left-text'>
+                                <p>Super! Right answer</p>
+                                <p>Did you know Narain Kartikeyan was the first F1 racing driver from India</p>
+<p><img src="http://www.thehindu.com/multimedia/dynamic/02478/KARTHIKEYAN_2478262f.jpg" height="300" width="300"></p>
+<p>With this we are done with the chapter – Inside our Earth</p>
+<p>Tell me how did you like it?</p>
+                </div>
+                
+                <span></span>
+                                <div class="col-sm-12">
+<button type="button" class="btn btn-primary" id="amazing-chapter-index2">Amazing Chapter</button>
+                                <button type="button" class="btn btn-primary" id="not-that-interesting-index2">Not That Interesting</button>
+</div>
+</div>
+
+<div id="amazing-chapter2">
+
+                <div class='left-text'>
+
+<p>Awesome! Glad that you liked the chapter!</p>
+<p>More fun ahead</p>
+<p>#SportsIsEducation</p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+                                    <button type="button" class="btn btn-primary" id="back-main-menu">Back To Main Menu</button>
+
+                </div>
+
+</div>
+
+<div id="not-that-interesting2">
+
+                <div class='left-text'>
+
+<p>Ohh! Thanks for pointing it out. Will add more interesting concepts :)</p>
+<p>Please share what did you not like by clicking on "Contact us" button on top of the page</p>
+<p>#SportsIsEducation</p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+                                                <button type="button" class="btn btn-primary" id="back-main-menu">Back To Main Menu</button>
+
+                </div>
+
+</div>
+
+<!-- desert chapter -->
+
+<div id="life-in-deserts">
+                <div class='left-text'>
+
+                                <p>A desert is a barren area of land where little precipitation occurs</p>
+
+<p>And consequently, living conditions are hostile for plant and animal life</p>
+
+<p>The 2 types of desert are: Hot Desert and Cold Desert</p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+                                                <button type="button" class="btn btn-primary">Hot Desert</button>
+
+                </div>
+
+</div>
+
+<div id="hot-desert">
+
+                <div class='left-text'>
+
+<p><img src="http://www.revision.co.zw/wp-content/uploads/2015/06/kalahari-min-600x376.jpg" height="300" width="350"></p>
+
+<p>The Sahara is the largest hot desert in the world</p>
+
+<p>It has an area of around 8.54 million sq. km</p>
+
+<p>Robot camel racing is a sport of countries like Qatar and UAE</p>
+
+<p>Robots are placed on the camels operated by joy sticks</p>
+
+<p><iframe width="854" height="480" src="https://www.youtube.com/embed/6ll4-OiLn4E?start=0&end=221" frameborder="0" allowfullscreen></iframe></p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+<button type="button" class="btn btn-primary">More Sports in Hot Desert</button>
+
+                </div>
+
+</div>
+
+<div id="more-sports-in-hot-desert">
+
+                <div class='left-text'>
+
+                                <p>Paragliding can be one of the best ways to explore any part of the world</p>
+
+<p>See how even the deserts can be a beautiful place to visit</p>
+
+<p> <iframe width="854" height="480" src="https://www.youtube.com/embed/87S-vDKTUok?start=6&end=119" frameborder="0" allowfullscreen></iframe></p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+                                                <button type="button" class="btn btn-primary">Cold Desert</button>
+
+                </div>
+
+</div>
+
+ 
+
+<div id="cold-desert">
+
+                <div class='left-text'>
+
+                                <p>Ladakh in India is a cold desert with beautiful landscapes</p>
+
+<p><img src=" http://www.thynkfeed.com/wp-content/uploads/7.0.jpg" height="350" width="450"></p>
+
+<p>According to facts, Antartica is the sportiest continent in the world. Watch here</p>
+
+<p><iframe width="854" height="480" src="https://www.youtube.com/embed/58M8ieRS6MY?start=0&end=205" frameborder="0" allowfullscreen></iframe></p>
+
+<p>This brings us to the end of the chapter. Small one indeed</p>
+
+<p>Let me know of your feedback on learning about the deserts</p>
+
+ 
+
+                </div>
+
+                
+
+<span></span>
+
+                                <div class="col-sm-12">
+
+<button type="button" class="btn btn-primary" id="amazing-chapter-index3">Amazing Chapter</button>
+
+<button type="button" class="btn btn-primary" id="not-that-interesting-index3">Not That Interesting</button>
+
+</div>
+
+</div>
+
+<div id="amazing-chapter3">
+
+                <div class='left-text'>
+
+<p>Awesome! Glad that you liked the chapter!</p>
+<p>More fun ahead</p>
+<p>#SportsIsEducation</p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+                                    <button type="button" class="btn btn-primary" id="back-main-menu">Back To Main Menu</button>
+
+                </div>
+
+</div>
+
+
+<div id="not-that-interesting3">
+
+                <div class='left-text'>
+
+<p>Ohh! Thanks for pointing it out. Will add more interesting concepts :)</p>
+<p>Please share what did you not like by clicking on "Contact us" button on top of the page</p>
+<p>#SportsIsEducation</p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+                                                <button type="button" class="btn btn-primary" id="back-main-menu">Back To Main Menu</button>
+
+                </div>
+
+</div>
+
+
+<!-- natural vegetation and wildlife chapter -->
+
+<div id="natural-vegetation-and-wildlife">
+               
+                <div class='left-text'>
+<p> There is a close relationship between the height of land and the kind of vegetation that grows there</p>
+
+<p>The vegetation varies from the deep jungles in the foothills to short grass and snow in the higher altitudes</p>
+
+<p>Similarly, different kinds of sports are played at different altitudes of the Himalayas</p>
+
+<p>The foothills of the Himalayas are known for adventure activities like Zorbing and River rafting</p>
+
+<p>Watch zorbing in Kashmir</p>
+
+<p><iframe width="854" height="480" src="https://www.youtube.com/embed/PI3-XQ10h2s?start=0&end=35" frameborder="0" allowfullscreen></iframe></p>
+
+<p>In Leh-Ladakh, which is situated in the mid altitude level of the Himalayas, the favourite sport is Ice Hockey</p>
+
+<p>The following image is from a Ice Hockey Tournament in Leh</p>
+
+<p><img src="http://www.aljazeera.com/mritems/Images/2016/2/29/48a99ff0797244b5afb1fc6c11deaa98_8.jpg" height="300" width="300"></p>
+
+<p>Mountaineering is the most enduring sport of the higher altitudes of the Himalayas</p>
+ 
+
+<p><iframe width="854" height="480" src="https://www.youtube.com/embed/Dtwjj40t-No?start=0&end=181" frameborder="0" allowfullscreen></iframe></p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+<button type="button" class="btn btn-primary">Types of Natural Vegetation</button>
+
+                </div>
+</div>
+
+<div id="types-of-natural-vegetation">
+
+                <div class='left-text'>
+
+<p>Natural vegetation is generally classified in to three broad categories as follows: Forests, Grasslands and Shrubs</p>
+ 
+<p>An immediate and broad distinction that can be made between types of trees (and wood) is the label of hardwood or softwood</p>
+
+<p>Cricket Bats are normally made from White Willow wood, which is a Deciduous tree. It is lightweight hardwood</p>
+
+<p>Let us learn - how a cricket bat is made - by Australian cricketer Shane Watson</p> 
+ 
+<p><iframe width="854" height="480" src="https://www.youtube.com/embed/IZuNWoxlXTE?start=0&end=334" frameborder="0" allowfullscreen></iframe></p>
+
+<p>Badminton courts are made of Pine wood which is a soft wood category</p>
+
+<p><img src="http://www.passionsports.in/wp-content/uploads/2015/04/IMG_5738-Copy.jpg" height="300" width="300"></p>
+
+<p>Like the Vegetation, climate affects Sports</p>
+
+<p>Can you Guess: Will a tennis ball bounce higher in hot or cold weather?</p>
+ 
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+<button type="button" class="btn btn-primary">More Bounce in Cold Weather</button>
+
+<button type="button" class="btn btn-primary">More Bounce in Hot Weather</button>
+
+                </div>
+
+</div>
+
+ 
+
+ 
+
+<div id="more-bounce-in-cold-weather">
+
+                <div class='left-text'>
+
+                                <p>Wrong answer!</p>
+
+                                <p>No worries. Watch the explanatory video to learn all about this</p>
+
+<p><iframe width="854" height="480" src="https://www.youtube.com/embed/GAExCcXK3g0?start=0&end=58" frameborder="0" allowfullscreen></iframe></p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+<button type="button" class="btn btn-primary">Slope and Thickness of Soil</button>
+
+                </div>
+
+</div>
+
+ 
+
+<div id="more-bounce-in-hot-weather">
+
+                <div class='left-text'>
+
+                                <p>Kudos! Right answer</p>
+
+                                <p>Watch the explanatory video to learn all about this</p>
+
+<p><iframe width="854" height="480" src="https://www.youtube.com/embed/GAExCcXK3g0?start=0&end=58" frameborder="0" allowfullscreen></iframe></p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+<button type="button" class="btn btn-primary">Slope and Thickness of Soil</button>
+
+                </div>
+
+</div>
+
+ 
+
+<div id="slope-and-thickness-of-soil">
+
+                <div class='left-text'>
+
+<p>Growth of vegetation depends on other factors like the slope and thickness of soil too</p>
+<p>So does biking</p>
+ 
+<p><iframe width="854" height="480" src="https://www.youtube.com/embed/PFHobwGiGXM?start=0&end=115" frameborder="0" allowfullscreen></iframe></p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+                                                <button type="button" class="btn btn-primary">More on Biking</button>
+
+                </div>
+
+</div>
+
+ 
+
+<div id="more-on-biking">
+
+                <div class='left-text'>
+
+                                <p>The longest bike trail stretches from Canada to Mexico</p>
+
+                                <p>The unpaved portions of the route range from high quality to gravel roads</p>
+
+                                <p>Lets end the chapter by looking at this amazing clip</p> 
+
+<p> <iframe width="854" height="480" src="https://www.youtube.com/embed/xqCYE-Smqf4?start=16&end=282" frameborder="0" allowfullscreen></iframe></p>
+
+<p>Share your views about the chapter</p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+<button type="button" class="btn btn-primary" id="amazing-chapter-index4">Amazing Chapter</button>
+
+<button type="button" class="btn btn-primary" id="not-that-interesting-index4">Not That Interesting</button>
+
+</div>
+
+</div>
+
+<div id="amazing-chapter4">
+
+                <div class='left-text'>
+
+<p>Awesome! Glad that you liked the chapter!</p>
+<p>More fun ahead</p>
+<p>#SportsIsEducation</p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+                                    <button type="button" class="btn btn-primary" id="back-main-menu">Back To Main Menu</button>
+
+                </div>
+
+</div>
+
+
+<div id="not-that-interesting4">
+
+                <div class='left-text'>
+
+<p>Ohh! Thanks for pointing it out. Will add more interesting concepts :)</p>
+<p>Please share what did you not like by clicking on "Contact us" button on top of the page</p>
+<p>#SportsIsEducation</p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+                                                <button type="button" class="btn btn-primary" id="back-main-menu">Back To Main Menu</button>
+
+                </div>
+
+</div>
+
+<!-- air chapter -->
+
+<div id="air">
+                <div class='left-text'>
+<p>Air is a matter - that is – it has mass and occupies space</p> 
+<p>It’s important in many ways. The air also gives life to this ball :D </p>
+<p><img src="http://www.ulpnet.com/wp-content/uploads/2016/09/football.jpg" height="220" width="300"></p><p>And then only you can see this beautiful battle – Messi vs Ronaldo 
+<p><iframe width="854" height="480" src="https://www.youtube.com/embed/yQspS6yRdQA?start=45&end=184" frameborder="0" allowfullscreen></iframe></iframe></p>
+<p>Who do you like better?</p>
+                </div>
+                
+                <span></span>
+                                <div class="col-sm-12">
+                                                <button type="button" class="btn btn-primary" id="messi1">Messi</button>
+<button type="button" class="btn btn-primary" id="ronaldo1">Ronaldo</button>
+                
+</div>
+</div>
+
+<div id="messi">
+                <div class='left-text'>
+<p><img src="http://i.dailymail.co.uk/i/pix/2014/09/08/1410171641437_wps_20_Barcelona_s_Lionel_Messi_.jpg" height="300" width="330"></p>
+<p>Let’s discuss more about Air now</p>
+<p>If you heat air, it expands and rises. Cold air is denser and heavy</p>
+<p><img src="http://fowlerearthscience.weebly.com/uploads/3/2/4/8/3248959/6915081_orig.jpg" height="300" width="200"></p><p>This is how Air Circulation takes place</p>
+                </div>
+                
+                <span></span>
+                                <div class="col-sm-12">
+                                                <button type="button" class="btn btn-primary">Show me an Example</button>
+                </div>
+</div>
+
+<div id="ronaldo">
+                <div class='left-text'>
+<p><img src="http://www.ronaldocr7.com/wp-content/uploads/2015/02/cristiano-ronaldo-not-hearing.jpg" height="150" width="220"></p>
+
+<p>Let’s discuss more about Air now</p>
+<p>If you heat air, it expands and rises. Cold air is denser and heavy</p>
+<p><img src="http://fowlerearthscience.weebly.com/uploads/3/2/4/8/3248959/6915081_orig.jpg" height="300" width="200"></p><p>This is how Air Circulation takes place</p>
+                </div>
+                
+                <span></span>
+                                <div class="col-sm-12">
+                                                <button type="button" class="btn btn-primary">Show me an Example</button>
+                </div>
+</div>
+
+<div id="show-me-an-example">
+                <div class='left-text'>
+<p> <iframe width="854" height="480" src="https://www.youtube.com/embed/rsnYBjINPn4?start=44&end=105" frameborder="0" allowfullscreen></iframe></p>
+<p>Hot-air balloons float because the air trapped inside the balloon is heated up by a burner</p>
+<p>The sport of ballooning is most enjoyable when flying 1,200 to 3,000 feet in the Atmosphere</p>
+                </div>
+                
+                <span></span>
+                                <div class="col-sm-12">
+                                                <button type="button" class="btn btn-primary">What is Atmosphere</button>
+                </div>
+</div>
+
+<div id="what-is-atmosphere">
+                <div class='left-text'>
+                                <p> Atmosphere is a huge blanket of air surrounding the Earth</p> 
+<p>It provides us the air we breathe and protects us from the harmful effects of the sun’s rays</p>
+<p>But for some people its just another playfield! Heard of SkyDiving?</p>
+<p> <iframe width="854" height="480" src="https://www.youtube.com/embed/CogIXrea6A4?start=81&end=204" frameborder="0" allowfullscreen></iframe></p>
+<p>Mysore, Aamby Valley, Pondicherry are the top places for Skydiving in India</p>
+                </div>
+                
+                <span></span>
+                                <div class="col-sm-12">
+                                                <button type="button" class="btn btn-primary">Air we Breathe</button>
+                </div>
+</div>
+
+<div id="air-we-breathe">
+                <div class='left-text'>
+                                <p> Humans and animals breathe oxygen from the air and release carbon dioxide</p>
+<p>Green plants use carbon dioxide to make their food and release oxygen</p>
+                </div>
+                
+                <span></span>
+                                <div class="col-sm-12">
+                                                <button type="button" class="btn btn-primary">Harmful Sun Rays</button>
+                </div>
+</div>
+
+<div id="harmful-sun-rays">
+
+                <div class='left-text'>
+
+                                <p>The Ozone layer of atmosphere protects us from the Sun's UV radiation</p>
+
+<p>The Greenhouse gases like carbon dioxide trap the heat radiation from Earth and prevent it from getting immensely cold</p>
+
+<p><img src="https://haskellsifiandtech.wikispaces.com/file/view/4.jpg/402375356/4.jpg" height="150" width="250"></p>
+
+<p>Burning fuels like oil and coal increases CO2 in the atmosphere and thereby more heat is retained</p>
+
+<p>This is causing increase in temperature and causes the snow in coldest parts of the world to melt. This is Global Warming</p>
+
+<p><iframe width="854" height="480" src="https://www.youtube.com/embed/XoumlqK1_MI?start=0&end=60" frameborder="0" allowfullscreen></iframe></iframe></p>
+
+<p>Not only sports, its affecting the entire world in horrible ways</p>
+
+<p>Quick Quiz – Carbon dioxide is?</p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+<button type="button" class="btn btn-primary">Inhaled by Human Beings</button>
+
+<button type="button" class="btn btn-primary">Is a Greenhouse Gas</button>
+
+<button type="button" class="btn btn-primary">Prevents from UV Radiation</button>
+
+                </div>
+
+</div>
+
+ 
+
+<div id="inhaled-by-human-beings">
+
+                <div class='left-text'>
+
+                                <p>Wrong Answer!</p>
+
+                                <p>Let’s recap what we learnt about the atmosphere</p>
+
+<p> <iframe width="854" height="480" src="https://www.youtube.com/embed/sTvqIijqvTg?start=0&end=49" frameborder="0" allowfullscreen></iframe></p>
+
+<p>So, we know a little about oxygen and carbon dioxide now</p>
+
+<p>The atmosphere majorly consists of Nitrogen and Oxygen</p>
+
+<p>Carbon dioxide, helium, ozone, argon and hydrogen are found in lesser quantities</p>
+
+<p><img src="http://teachertech.rice.edu/Participants/louviere/Images/atmgr.gif" height="150" width="150"></p>
+
+<p>The presence of these gases varies in atmosphere depending on the distance from Earth’s surface</p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+                                                <button type="button" class="btn btn-primary">Layers of Earth</button>
+
+                </div>
+
+</div>
+
+ 
+
+<div id="is-a-greenhouse-gas">
+
+                <div class='left-text'>
+
+                                <p>Right Answer!</p>
+
+                                <p>Let’s recap what we learnt about the atmosphere</p>
+
+<p> <iframe width="854" height="480" src="https://www.youtube.com/embed/sTvqIijqvTg?start=0&end=49" frameborder="0" allowfullscreen></iframe></p>
+
+<p>So, we know a little about oxygen and carbon dioxide now</p>
+
+<p>The atmosphere majorly consists of Nitrogen and Oxygen</p>
+
+<p>Carbon dioxide, helium, ozone, argon and hydrogen are found in lesser quantities</p>
+
+<p><img src="http://teachertech.rice.edu/Participants/louviere/Images/atmgr.gif" height="150" width="150"></p>
+
+<p>The presence of these gases varies in atmosphere depending on the distance from Earth’s surface</p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+                                                <button type="button" class="btn btn-primary">Layers of Earth</button>
+
+                </div>
+
+</div>
+
+ 
+
+<div id="prevents-from-uv-radiation">
+
+                <div class='left-text'>
+
+                                <p>Wrong Answer!</p>
+
+                                <p>Let’s recap what we learnt about the atmosphere</p>
+
+<p> <iframe width="854" height="480" src="https://www.youtube.com/embed/sTvqIijqvTg?start=0&end=49" frameborder="0" allowfullscreen></iframe></p>
+
+<p>So, we know a little about oxygen and carbon dioxide now</p>
+
+<p>The atmosphere majorly consists of Nitrogen and Oxygen</p>
+
+<p>Carbon dioxide, helium, ozone, argon and hydrogen are found in lesser quantities</p>
+
+<p><img src="http://teachertech.rice.edu/Participants/louviere/Images/atmgr.gif" height="150" width="150"></p>
+
+<p>The presence of these gases varies in atmosphere depending on the distance from Earth's surface</p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+                                                <button type="button" class="btn btn-primary">Layers of Earth</button>
+
+                </div>
+
+</div>
+
+<div id="layers-of-earth">
+
+                <div class='left-text'>
+
+                                <p> The atmosphere is divided into multiple layers</p>
+
+<p><img src="https://userscontent2.emaze.com/images/9dd7cb0a-8ab8-4f75-8650-96e158c6e668/7d02bb7c-1899-4cca-a348-393071840837.png" height="300" width="350"></p>
+
+<p>Can you guess where does most of the air we breathe exist</p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+                                                <button type="button" class="btn btn-primary">Troposphere</button>
+
+                                                <button type="button" class="btn btn-primary">Stratosphere</button>
+
+                
+
+ 
+
+                </div>
+
+</div>
+
+ 
+
+<div id="troposphere">
+
+                <div class='left-text'>
+
+                                <p>Correct!</p>
+
+                <p>The closest layer to earth has maximum air we breathe</p> 
+
+ 
+
+<p>Stratosphere is free of clouds and ideal for flying aeroplanes. It also contains the ozone layer</p> 
+
+<p>The clouds in troposphere are responsible for rains and rains affect the game of cricket</p>
+
+<p>Former England batsman Marcus Trescothick explains us how</p>
+
+<p> <iframe width="854" height="480" src="https://www.youtube.com/embed/O-eAWhS0zYw?start=0&end=136" frameborder="0" allowfullscreen></iframe></iframe></p>
+
+<p>The average weather conditions of a place for a longer period is called Climate</p>
+
+<p>Select the game in which you want to see the effects Temperature</p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+<button type="button" class="btn btn-primary">Effects of Temperature on American Football</button>
+
+<button type="button" class="btn btn-primary">Effects of Temperature on Athletics</button>
+
+                </div>
+
+</div>
+
+ 
+
+<div id="stratosphere">
+
+                <div class='left-text'>
+
+                                <p>Oops! Wrong Answer</p>
+
+                <p>The closest layer to earth has maximum air we breathe</p> 
+
+ 
+
+<p>Stratosphere is free of clouds and ideal for flying aeroplanes. It also contains the ozone layer</p> 
+
+<p>The clouds in troposphere are responsible for rains and rains affect the game of cricket</p>
+
+<p>Former England batsman Marcus Trescothick explains us how</p>
+
+<p> <iframe width="854" height="480" src="https://www.youtube.com/embed/O-eAWhS0zYw?start=0&end=136" frameborder="0" allowfullscreen></iframe></iframe></p>
+
+<p>The average weather conditions of a place for a longer period is called Climate</p>
+
+<p>Select the game in which you want to see the effects Temperature</p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+<button type="button" class="btn btn-primary">Effects of Temperature on American Football</button>
+
+<button type="button" class="btn btn-primary">Effects of Temperature on Athletics</button>
+
+                </div>
+
+</div>
+
+<div id="effects-of-temparature-on-american-football">
+
+                <div class='left-text'>
+
+<p><iframe width="854" height="480" src="https://www.youtube.com/embed/-q8usyoxHGk?start=0&end=166" frameborder="0" allowfullscreen></iframe></p>
+
+                                <p> Not only temperature, sports are affected by Air Pressure too</p>
+
+<p>Select the one you which interests you most</p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+<button type="button" class="btn btn-primary">Swing Bowling in Cricket</button>
+
+<button type="button" class="btn btn-primary">Curl of Football</button>
+
+                </div>
+
+</div>
+
+ 
+
+<div id="effects-of-temparature-on-athletics">
+
+                <div class='left-text'>
+
+<p><iframe width="854" height="480" src="https://www.youtube.com/embed/jFOpKhkdbpk?start=0&end=110" frameborder="0" allowfullscreen></iframe></p>
+
+                                <p> Not only temperature, sports are affected by Air Pressure too</p>
+
+<p>Select the one you which interests you most</p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+<button type="button" class="btn btn-primary">Swing Bowling in Cricket</button>
+
+<button type="button" class="btn btn-primary">Curl of Football</button>
+
+                </div>
+
+</div>
+
+<div id="swing-bowling-in-cricket">
+
+                <div class='left-text'>
+
+                                <p>Watch James Anderson explaining it to you</p>
+
+<p><iframe width="854" height="480" src="https://www.youtube.com/embed/bbqbg8PiBl4?start=0&end=96" frameborder="0" allowfullscreen></iframe></p>
+
+<p>Now witness James Anderson in action using his lethal swing bowling</p>
+
+<p><iframe width="854" height="480" src="https://www.youtube.com/embed/_Q28uBv7-Xo?start=4&end=102" frameborder="0" allowfullscreen></iframe></p>
+
+<p>We’ve seen temperatures and winds affecting the game of play, both in positive and negative ways</p>
+
+<p>But some sports are completely dependent on the weather. Like sailing. Find out more about it when you have time</p>
+
+<p><img src="http://www.stgeorgeutah.com/wp-content/uploads/2013/04/IMG_2577_2.jpg" height="300" width="350"></p>
+
+<p>This brings us to the end of this chapter</p>
+
+<p>We have realized Air and Atmosphere is essential for our survival on this planet Earth</p>
+
+<p>Share your experience learning about Air</p> 
+
+                </div>
+
+                                <span></span>
+
+                                <div class="col-sm-12">
+
+<button type="button" class="btn btn-primary" id="amazing-chapter-index5">Amazing Chapter</button>
+
+<button type="button" class="btn btn-primary" id="not-that-interesting-index5">Not That Interesting</button>
+
+</div>
+
+</div>
+
+ 
+
+<div id="curl-of-football">
+
+                <div class='left-text'>
+
+<p> <iframe width="854" height="480" src="https://www.youtube.com/embed/YIPO3W081Hw?start=0&end=197" frameborder="0" allowfullscreen></iframe></p>
+
+<p>Watch Messi doing this again and again and again</p>
+
+<p><iframe width="854" height="480" src="https://www.youtube.com/embed/5odQiJVYDoo?start=0&end=96" frameborder="0" allowfullscreen></iframe></iframe></p>
+
+<p>We’ve seen temperatures and winds affecting the game of play, both in positive and negative ways</p>
+
+<p>But some sports are completely dependent on the weather. Like sailing. Find out more about it when you have time</p>
+
+<p><img src="http://www.stgeorgeutah.com/wp-content/uploads/2013/04/IMG_2577_2.jpg" height="300" width="350"></p>
+
+<p>This brings us to the end of this chapter</p>
+
+<p>We have realized Air and Atmosphere is essential for our survival on this planet Earth</p>
+
+<p>Share your experience learning about Air</p> 
+
+                </div>
+
+                                <span></span>
+
+                                <div class="col-sm-12">
+
+<button type="button" class="btn btn-primary" id="amazing-chapter-index5">Amazing Chapter</button>
+
+<button type="button" class="btn btn-primary" id="not-that-interesting-index5">Not That Interesting</button>
+
+</div>
+
+</div>
+
+<div id="amazing-chapter5">
+
+                <div class='left-text'>
+
+<p>Awesome! Glad that you liked the chapter!</p>
+<p>More fun ahead</p>
+<p>#SportsIsEducation</p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+                                    <button type="button" class="btn btn-primary" id="back-main-menu">Back To Main Menu</button>
+
+                </div>
+
+</div>
+
+
+<div id="not-that-interesting5">
+
+                <div class='left-text'>
+
+<p>Ohh! Thanks for pointing it out. Will add more interesting concepts :)</p>
+<p>Please share what did you not like by clicking on "Contact us" button on top of the page</p>
+<p>#SportsIsEducation</p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+                                                <button type="button" class="btn btn-primary" id="back-main-menu">Back To Main Menu</button>
+
+                </div>
+
+</div>
+
+
+
+<!-- our changing earth chapter -->
+
+<div id="our-changing-earth">
+                <div class='left-text'>
+<p>Hello!</p>
+<p>This chapter is about Volcanos and Earthquakes</p>
+<p>Focus is also on major land forms – basically work of River, Sea Waves, Ice and Wind</p>
+                
+                <span></span>
+                                <div class="col-sm-12">
+<button type="button" class="btn btn-primary">Volcanos</button>
+                </div>
+</div>
+
+<div id="volcanos">
+                <div class='left-text'>
+<p><img src="http://www.livescience.com/images/i/000/027/830/original/russia-volcano.jpg" height="260" width="300"></p>
+<p>A volcano is a vent (opening) in the earth's crust through which molten material erupts suddenly</p>
+<p>Let us see some closeups</p>
+<p><iframe width="854" height="480" src="https://www.youtube.com/embed/BCkHnvDGWOY?start=3&end=88" frameborder="0" allowfullscreen></iframe></p>
+<p>The costume she is wearing is called Wingsuit</p>
+<p><img src="https://s-media-cache-ak0.pinimg.com/originals/11/52/aa/1152aa171c5b34b03338e2f66aeb7cf4.jpg" height="300" width="340"></p>
+<p>Wingsuit flying or wingsuiting is the sport of gliding through the air</p>
+                            
+                </div>   
+                <span></span>
+                                <div class="col-sm-12">
+                                                <button type="button" class="btn btn-primary">Closer Look at Volcanos</button>
+                </div>
+</div>
+
+
+<div id="closer-look-at-volcanos">
+                <div class='left-text'>
+                                <p>We saw the top view of a volcano. Let’s get closer</p>
+<p>Believe it or not, there is an adventure sports based on volcanos called Volcano Boarding</p>
+<p> <iframe width="854" height="480" src="https://www.youtube.com/embed/vKOTeWVIhwU?start=0&end=70" frameborder="0" allowfullscreen></iframe></p>
+<p>Most earthquakes, and also volcanic eruptions, occur on or near the edges of Earth's tectonic plates</p>
+<p>Now, select what do you want to learn next</p> 
+                </div>   
+                <span></span>
+                                <div class="col-sm-12">
+                                                <button type="button" class="btn btn-primary">Work of River</button>
+                </div>
+</div>
+
+<div id="work-of-river">
+                <div class='left-text'>
+                                <p> The running water in the river erodes the landscape</p>
+<p>When the river tumbles at steep angle over very hard rocks or down a steep valley side it forms a waterfall</p>
+<p>Watch these adventurous people Kayaking their way into the waterfall</p>
+<p><iframe width="854" height="480" src="https://www.youtube.com/embed/mxtXzt3nUSw?start=213&end=276" frameborder="0" allowfullscreen></iframe></p>
+<p>Rishikesh in India is famous for whitewater river rafting in the river Ganga</p>
+<p><iframe width="854" height="480" src="https://www.youtube.com/embed/Z8XOvF7JrM4?start=21&end=197" frameborder="0" allowfullscreen></iframe></p><p>As the river approaches the sea, the speed of the flowing water decreases</p>
+<p>The river begins to break up into several streams called distributaries</p>
+                </div>
+                <span></span>
+                                <div class="col-sm-12">
+                                                <button type="button" class="btn btn-primary">Work of Sea Waves</button>
+                </div>
+</div>
+
+<div id="work-of-sea-waves">
+                <div class='left-text'>
+                                <p>Seawaves continuously strike at the rocks. Cracks are developed because of this</p>
+<p>Over time they become larger and wider</p>
+<p><img src="http://www.onegeology.org/extra/kids/images/seaStack1.jpg" height="150" width="150"></p>
+<p>This is called a Sea Arch. This is work of sea waves</p>
+<p>Look at the work of human at the work of nature. Rock Climbing!</p>
+<p><iframe width="854" height="480" src="https://www.youtube.com/embed/FCWLtyTmX3o?start=50&end=161" frameborder="0" allowfullscreen></iframe><p>
+<p>Rock climbing without ropes is called Free Soloing</p>
+</div>
+                <span></span>
+                                <div class="col-sm-12">
+                                                <button type="button" class="btn btn-primary">Work of Ice</button>
+                </div>
+</div>
+
+<div id="work-of-ice">
+                <div class='left-text'>
+<p> Glaciers are “rivers" of ice which too erode the landscape by bull dozing the soil and stones</p>
+<p><img src=" http://static3.mbtfiles.co.uk/media/docs/newdocs/gcse/geography/physical_geography/888726/html/images/image09.png" height="100" width="200"></p>
+<p>When you think of Golf, the picture that forms is of green grass and warm weather</p>
+<p>Did you know that every year there is a World Ice Golf competition which happens in the Greenland Glaciers?</p>
+<p><iframe width="854" height="480" src="https://www.youtube.com/embed/8gYYVKj-iHo?start=0&end=112" frameborder="0" allowfullscreen></iframe></p>
+                </div>
+                <span></span>
+                                <div class="col-sm-12">
+                                                <button type="button" class="btn btn-primary">Work of Wind in Desert</button>
+                </div>
+</div>
+
+<div id="work-of-wind-in-desert">
+                <div class='left-text'>
+                                <p>A Sand dune is a hill of sand built by wind</p>
+<p>Sand Dune Boarding is a board sport which is like snow boarding which takes place in sand dunes instead of snow covered mountains</p>
+<p><iframe width="854" height="480" src="https://www.youtube.com/embed/4cWHQbBFBRI?start=0&end=127" frameborder="0" allowfullscreen></iframe></p>
+<p>All these works of nature have helped in shaping the world as it is presently</p>
+<p>But we should be prepared for disasters like Earthquake</p>
+<p><iframe width="854" height="480" src="https://www.youtube.com/embed/d08QUmxzdKU?start=92&end=168" frameborder="0" allowfullscreen></iframe></p><p>With this, we have completed the chapter – Our changing Earth</p>
+<p>Share your views on the chapter</p>
+                </div>   
+                <span></span>
+                                <div class="col-sm-12">
+<button type="button" class="btn btn-primary" id="amazing-chapter-index6">Amazing Chapter</button>
+<button type="button" class="btn btn-primary" id="not-that-interesting-index6">Not That Interesting</button>
+ 
+                </div>
+</div>
+
+<div id="amazing-chapter6">
+
+                <div class='left-text'>
+
+<p>Awesome! Glad that you liked the chapter!</p>
+<p>More fun ahead</p>
+<p>#SportsIsEducation</p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+                                    <button type="button" class="btn btn-primary" id="back-main-menu">Back To Main Menu</button>
+
+                </div>
+
+</div>
+
+
+<div id="not-that-interesting6">
+
+                <div class='left-text'>
+
+<p>Ohh! Thanks for pointing it out. Will add more interesting concepts :)</p>
+<p>Please share what did you not like by clicking on "Contact us" button on top of the page</p>
+<p>#SportsIsEducation</p>
+
+                </div>
+
+                
+
+                <span></span>
+
+                                <div class="col-sm-12">
+
+                                                <button type="button" class="btn btn-primary" id="back-main-menu">Back To Main Menu</button>
+
+                </div>
+
+</div>
+
+
+ 
+
+
+

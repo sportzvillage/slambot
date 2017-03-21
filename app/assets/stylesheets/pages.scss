@@ -13,10 +13,17 @@
     margin-bottom:10px;
     font-size:150%;
     border-radius: 10px;
-    font-family:"helvetica";
+    font-family:"roboto";
     border:1px solid #5FCF80;
-    
+  }
+  
+  .starting_text-index{margin-top:150px;}
 
+  .navbar {
+  background-color:white;
+  clear:both;
+  border:0;
+  height:80px;
   }
 
 
@@ -38,7 +45,7 @@
     padding: 5px 15px 5px 15px;
     clear:both;
     border-radius: 10px;
-    font-family:"helvetica";
+    font-family:"roboto";
   }
 
   .landing-page{
@@ -77,3 +84,71 @@
   position: absolute;
 }
  
+#main-menu2,
+#inside-our-earth,
+#master-blaster-sachin,
+#cool-calm-dhoni,
+#stylish-kohli,
+#mantle,
+#core,
+#crust,
+#two-grand-slams,
+#four-grand-slams,
+#i-dont-know,
+#metamorphic-rocks,
+#minerals,
+#schumacher,
+#hamilton,
+#our-changing-earth,
+#volcanos,
+#closer-look-at-volcanos,
+#work-of-river,
+#work-of-sea-waves,
+#work-of-ice,
+#work-of-wind-in-desert,
+#air,
+#messi,
+#ronaldo,
+#show-me-an-example,
+#what-is-atmosphere,
+#air-we-breathe,
+#harmful-sun-rays,
+#inhaled-by-human-beings,
+#is-a-greenhouse-gas,
+#prevents-from-uv-radiation,
+#layers-of-earth,
+#stratosphere,
+#troposphere,
+#effects-of-temparature-on-athletics,
+#effects-of-temparature-on-american-football,
+#swing-bowling-in-cricket,
+#curl-of-football,
+#water,
+#show-answer,
+#ocean-circulation,
+#ocean-currents,  
+#natural-vegetation-and-wildlife,
+#types-of-natural-vegetation,
+#more-bounce-in-cold-weather,
+#more-bounce-in-hot-weather,
+#slope-and-thickness-of-soil,
+#more-on-biking,
+#life-in-deserts,
+#hot-desert,
+#more-sports-in-hot-desert,
+#cold-desert,
+#main-menu10,
+#amazing-chapter1    
+#not-that-interesting1,
+#amazing-chapter2    
+#not-that-interesting2,
+#amazing-chapter3    
+#not-that-interesting3,
+#amazing-chapter4    
+#not-that-interesting4,
+#amazing-chapter5    
+#not-that-interesting5,
+#amazing-chapter6,  
+#not-that-interesting6,
+.starting_text-index
+{display:block;overflow:auto;background: url('1.jpg');background-repeat: no-repeat;background-attachment: scroll;}
