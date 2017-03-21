@@ -53,7 +53,7 @@ $( ".btn-primary" ).click(function() {
       $('#main-menu1').fadeIn('slow');
       $('#starting_text').hide();
       $('#sounds-amazing1').hide();
-      $('#let-us-learn1').hide();
+      $('#lets-learn').hide();
       $('#brazil1').hide();
       $('#portugal1').hide();
       $('#argentina1').hide();
@@ -70,6 +70,7 @@ $( ".btn-primary" ).click(function() {
     case "Our Changing Earth":
       $('#our-changing-earth1').fadeIn('slow');
     break; 
+    
   }
   // $("html, body").animate({ scrollTop: $(document).height() }, 2000);
 }); 
