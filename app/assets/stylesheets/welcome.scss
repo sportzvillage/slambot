@@ -27,13 +27,12 @@
 .btn-head{
 	background-color: #ffffff;
     margin-left:64px;
-    margin-top:18px;
-    font-size:150%;
+    margin-top:23px;
+    font-size:100%;
     border-radius: 10px;
-    color:#1C8527;
+    color:#837E7D;
      outline:0;
     font-family:"roboto";
-    font-weight:bold;
 }
 
 .btn-logout {margin-left:100px;}
@@ -122,14 +121,15 @@ margin:0;
  }
 
             #slamsubhead{
-              font-weight: bold;
-              color:#2C6F8C;
+              color:#1C8527;
               z-index: 10;
               text-align:center;
+              font-family:"roboto";
               width : 100%;
               font-size:25px;
+              margin-top: 118px;
             }
-            #slamsubhead1{font-size:15px;}
+            #slamsubhead1{font-size:15px;font-family:"roboto";margin-bottom:2px;}
             #rightnav{
             text-align:center;
             padding-left: 50px;
@@ -247,5 +247,7 @@ margin:0;
   color:red;
   }
 
-  
+  .carousel-inner {margin-top:10px;}
+
+
 

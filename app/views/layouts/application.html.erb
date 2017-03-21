@@ -9,6 +9,7 @@
     
       <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
       <script src="http://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.js"></script>
+      <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
   </head>
   
@@ -23,18 +24,18 @@
         
 
                         <% if user_signed_in? %>
-                        <div class="col-sm-4"><div id = "slamhead"><%= image_tag "logo.jpg", size: "180x60" %></div></div>
+                        <div class="col-sm-4"><div id = "slamhead"><%= image_tag "logo.png", size: "180x60" %></div></div>
         <div class="col-sm-8" id = "rightnav">
-        <button class="btn btn-head btn-logout" data-toggle="modal" data-target=".bd-example-modal-lg-aboutus">AboutUs</button>
-         <button class="btn btn-head btn-logout" data-toggle="modal" data-target=".bd-example-modal-lg">Contact Us</button>
-         <%= link_to "Logout", destroy_user_session_path,:method => :delete, :class => 'btn btn-head btn-logout' %>
+        <button class="btn btn-head btn-logout" data-toggle="modal" data-target=".bd-example-modal-lg-aboutus">ABOUT US</button>
+         <button class="btn btn-head btn-logout" data-toggle="modal" data-target=".bd-example-modal-lg">CONTACT US</button>
+         <%= link_to "SIGNOUT", destroy_user_session_path,:method => :delete, :class => 'btn btn-head btn-logout' %>
                           
                         <% else %>
-                        <div class="col-sm-4"><div id = "slamhead"><%= image_tag "logo.jpg", size: "180x60" %></div></div>
-        <button class="btn btn-head" data-toggle="modal" data-target=".bd-example-modal-lg-aboutus">AboutUs</button>
-         <button class="btn btn-head" data-toggle="modal" data-target=".bd-example-modal-lg-signup">Signup</button>
-         <button class="btn btn-head" data-toggle="modal" data-target=".bd-example-modal-lg">Contact Us</button>
-         <button class="btn btn-head" data-toggle="modal" data-target=".bd-example-modal-lg-signin">Login</button>
+                        <div class="col-sm-4"><div id = "slamhead"><%= image_tag "logo.png", size: "180x60" %></div></div>
+        <button class="btn btn-head" data-toggle="modal" data-target=".bd-example-modal-lg-aboutus">ABOUT US</button>
+         <button class="btn btn-head" data-toggle="modal" data-target=".bd-example-modal-lg-signup">SIGNUP</button>
+         <button class="btn btn-head" data-toggle="modal" data-target=".bd-example-modal-lg">CONTACT US</button>
+         <button class="btn btn-head" data-toggle="modal" data-target=".bd-example-modal-lg-signin">SIGNIN</button>
                           
                         <% end %>
         <div>
